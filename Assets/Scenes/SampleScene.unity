@@ -526,6 +526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 3
   speed: 3
+  faces:
+  - {fileID: 21300000, guid: e09ec2ddc8b0319488c737abf2d9d1f5, type: 3}
+  - {fileID: 21300000, guid: a73a0f4e2e42cd943b35d8ceb61a8016, type: 3}
 --- !u!61 &1590412702
 BoxCollider2D:
   m_ObjectHideFlags: 0

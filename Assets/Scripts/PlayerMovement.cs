@@ -9,15 +9,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float velocity = 3f;// jumping up force/speed
     [SerializeField] private float speed = 1f;// movement speed
 
+    public Sprite[] faces;
+
     private float horizontal;
     private bool facingRight = true;
     
     private Rigidbody2D body;
+    private SpriteRenderer renderer;
 
     void Start()
     {
 
         body = GetComponent<Rigidbody2D>();
+        renderer = GetComponent<SpriteRenderer>();
         
     }
 
@@ -33,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         //movement setup
         horizontal = Input.GetAxisRaw("Horizontal");
 
-       // Flip();
+       Flip();
         
     }
 
@@ -47,16 +51,20 @@ public class PlayerMovement : MonoBehaviour
     private void Flip()
     {
         //facing towards
-        if (facingRight && horizontal < 0 || !facingRight && horizontal > 0f)
+        if (facingRight && horizontal < 0f)
         {
-            
-            facingRight = !facingRight;
 
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            renderer.sprite = faces[0];
 
         }
+        else if (!facingRight && horizontal > 0f)
+        {
+
+            renderer.sprite = faces[1];
+
+        }
+
+        facingRight = !facingRight;
 
     }
 
