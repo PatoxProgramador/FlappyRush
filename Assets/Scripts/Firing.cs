@@ -1,0 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class Firing : MonoBehaviour
+{
+    [SerializeField] private GameObject bulletPrefab;
+    [Range(0.1f, 10f)]
+    [SerializeField]
+    private float fireRate = 1f;
+
+    private float fireTimer = 0f;
+
+    [Range(1f, 100f)]
+    [SerializeField]
+    private float recoil = 30;
+
+    // Update is called once per frame
+    public float FireAndReturnRecoil()
+    {
+        if (Input.GetMouseButton(0) && fireTimer <= 0)
+        {
+            return this.shoot();
+        }
+        else
+        {
+            fireTimer -= Time.fixedDeltaTime;
+        }
+        return 0;
+    }
+
+    private float shoot()
+    {
+        Instantiate(bulletPrefab, this.gameObject.transform.position, this.gameObject.transform.rotation);
+        this.fireTimer = this.fireRate;
+        return this.recoil;
+    }
+}
