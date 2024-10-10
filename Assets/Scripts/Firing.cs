@@ -5,6 +5,11 @@ using UnityEngine.AI;
 
 public class Firing : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject bulletSpawnPointRight;
+    [SerializeField]
+    private GameObject bulletSpawnPointLeft;
+
     [SerializeField] private GameObject bulletPrefab;
     [Range(0.1f, 10f)]
     [SerializeField]
@@ -32,7 +37,14 @@ public class Firing : MonoBehaviour
 
     private float shoot()
     {
-        Instantiate(bulletPrefab, this.gameObject.transform.position, this.gameObject.transform.rotation);
+        if (!this.transform.parent.GetComponent<SpriteRenderer>().flipY)
+        {
+            Instantiate(bulletPrefab, this.bulletSpawnPointRight.transform.position, this.bulletSpawnPointRight.transform.rotation);
+        }
+        else
+        {
+            Instantiate(bulletPrefab, this.bulletSpawnPointLeft.transform.position, this.bulletSpawnPointLeft.transform.rotation);
+        }
         this.fireTimer = this.fireRate;
         return this.recoil;
     }

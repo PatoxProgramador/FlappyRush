@@ -11,7 +11,7 @@ public class Aiming : MonoBehaviour
 
     private Vector3 mousePos;
 
-    private GameObject BulletSpawnPoint;
+    private GameObject CrossHair;
 
     private Firing firing;
 
@@ -33,6 +33,15 @@ public class Aiming : MonoBehaviour
         Vector3 rotation = mousePos - transform.position;
 
         float zRotation = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
+        if (zRotation < 90 && zRotation > -90)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().flipY = false;
+        }
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+        }
+
         float recoilAndRecovery = this.firing.FireAndReturnRecoil();
         var newRoation = Quaternion.Euler(0, 0, zRotation + recoilAndRecovery);
         transform.rotation = Quaternion.Lerp(transform.rotation, newRoation, Time.fixedDeltaTime * aimSpeed);
@@ -40,13 +49,13 @@ public class Aiming : MonoBehaviour
 
     private void FindBulletSpawnPoint()
     {
-        this.BulletSpawnPoint = this.transform.Find("BulletSpawnPoint").gameObject;
-        if (!this.BulletSpawnPoint)
+        this.CrossHair = this.transform.Find("CrossHair").gameObject;
+        if (!this.CrossHair)
         {
             Debug.LogError("Failed To Find BulletSpawnPoint");
             return;
         }
-        this.firing = this.BulletSpawnPoint.GetComponent<Firing>();
+        this.firing = this.CrossHair.GetComponent<Firing>();
         if (!this.firing)
         {
             Debug.LogError("Failed to find Firing script on BulletSpawnPoint");
