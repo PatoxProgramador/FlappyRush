@@ -33,13 +33,16 @@ public class Aiming : MonoBehaviour
         Vector3 rotation = mousePos - transform.position;
 
         float zRotation = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
+        PlayerMovement playerMovement = this.transform.parent.GetComponent<PlayerMovement>();
         if (zRotation < 90 && zRotation > -90)
         {
             this.gameObject.GetComponent<SpriteRenderer>().flipY = false;
+            this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[1];
         }
         else
         {
             this.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[0];
         }
 
         float recoilAndRecovery = this.firing.FireAndReturnRecoil();

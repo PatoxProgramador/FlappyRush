@@ -13,16 +13,16 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontal;
     private bool facingRight = true;
-    
+
     private Rigidbody2D body;
-    private SpriteRenderer renderer;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
 
         body = GetComponent<Rigidbody2D>();
-        renderer = GetComponent<SpriteRenderer>();
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
     void Update()
@@ -36,36 +36,12 @@ public class PlayerMovement : MonoBehaviour
         }
         //movement setup
         horizontal = Input.GetAxisRaw("Horizontal");
-
-       Flip();
-        
     }
 
     private void FixedUpdate()
     {
         // movement action
-        body.velocity = new Vector2 (horizontal * speed, body.velocity.y);
+        body.velocity = new Vector2(horizontal * speed, body.velocity.y);
 
     }
-
-    private void Flip()
-    {
-        //facing towards
-        if (facingRight && horizontal < 0f)
-        {
-
-            renderer.sprite = faces[0];
-
-        }
-        else if (!facingRight && horizontal > 0f)
-        {
-
-            renderer.sprite = faces[1];
-
-        }
-
-        facingRight = !facingRight;
-
-    }
-
 }
