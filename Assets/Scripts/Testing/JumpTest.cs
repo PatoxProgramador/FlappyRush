@@ -6,14 +6,27 @@ using UnityEngine;
 public class JumpTest : MonoBehaviour
 {
 
-    [SerializeField]float speed = 10;
+    [SerializeField]float speed;
+    float speed2 = 3f;
+    float startSpeed;
+
+    private float horizontal;
 
     private Rigidbody2D body;
+
+    [SerializeField]bool canMove;
+
+    public GameObject aim;
+    [SerializeField] bool canAim;
 
     void Start()
     {
 
+        aim.SetActive(false);
+
         body = GetComponent<Rigidbody2D>();
+
+        startSpeed = speed;
 
     }
 
@@ -26,13 +39,28 @@ public class JumpTest : MonoBehaviour
                 StartCoroutine(change());
 
         }
+
+        if(canMove == true)
+        {
+
+            horizontal = Input.GetAxisRaw("Horizontal");
+            body.velocity = new Vector2(horizontal * speed2, body.velocity.y);
+
+        }
+
+        if (canAim == true)
+        {
+
+            aim.SetActive(true);
+
+        }
         
     }
 
     IEnumerator change()
     {
 
-        speed -= 0.7f;
+        speed -= 0.4f;
         body.velocity = Vector2.up * speed;
 
         yield return new WaitForSeconds(0.05f);
@@ -47,10 +75,29 @@ public class JumpTest : MonoBehaviour
         {
 
             StopCoroutine(change());
-            speed = 10;
+            speed = startSpeed;
 
         }
         
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "MoveCheck")
+        {
+
+            canMove = true;
+
+        }
+
+        if (collision.gameObject.tag == "AimCheck")
+        {
+
+            canAim = true;
+
+        }
 
     }
 
