@@ -14,7 +14,7 @@ public class CameraFollow : MonoBehaviour
         
     }
 
-    void Update()
+    void LateUpdate()
     {
 
         Vector3 newPos = new Vector3(target.position.x, target.position.y + yOffset, -10f);

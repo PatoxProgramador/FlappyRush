@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     public Sprite[] faces;
 
     private float horizontal;
-    private bool facingRight = true;
 
     private Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
