@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Claims;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
+
+    [SerializeField] bool canMove;//locks movement
 
     void Start()
     {
@@ -42,14 +45,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // movement action
-        body.velocity = new Vector2(horizontal * speed, body.velocity.y);
+        if (canMove)
+        {
+            // movement action
+            body.velocity = new Vector2(horizontal * speed, body.velocity.y);
+
+        }
 
     }
     //jump friction -- velocity decreases over time
     IEnumerator changeJumpBoost()
     {
-
+        
         velocity -= 0.4f;
         body.velocity = Vector2.up * velocity;
 
@@ -71,4 +78,25 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //unlocks movement
+        if (collision.gameObject.tag == "MoveCheck")
+        {
+
+            canMove = true;
+
+        }
+
+        /*if (collision.gameObject.tag == "AimCheck")
+        {
+
+            canAim = true;
+
+        }
+        */
+
+    }
+
 }
