@@ -38,11 +38,13 @@ public class Aiming : MonoBehaviour
         {
             this.gameObject.GetComponent<SpriteRenderer>().flipY = false;
             this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[1];
+            this.transform.localPosition = new Vector3(0.13f,-0.32f,0f);
         }
         else
         {
             this.gameObject.GetComponent<SpriteRenderer>().flipY = true;
             this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[0];
+            this.transform.localPosition = new Vector3(-0.13f,-0.32f,0f);
         }
 
         float recoilAndRecovery = this.firing.FireAndReturnRecoil();
