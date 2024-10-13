@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 626944797691551518}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1, y: 0.01, z: 0}
+  m_LocalPosition: {x: 0.233, y: 0.158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -194,7 +194,6 @@ MonoBehaviour:
   faces:
   - {fileID: 21300000, guid: 3ef4104648d622e4ea4ad94d3f3fc1a8, type: 3}
   - {fileID: 21300000, guid: a8af9d3bb5e3a2847aec89bb70cf1559, type: 3}
-  canMove: 0
 --- !u!61 &3117619915907785991
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -391,7 +390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimSpeed: 10
-  spriteFlipCoolDown: 0.275
 --- !u!212 &8742723570355215622
 SpriteRenderer:
   m_ObjectHideFlags: 0

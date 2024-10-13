@@ -19,12 +19,6 @@ public class Aiming : MonoBehaviour
     [SerializeField]
     private float aimSpeed = 10f;
 
-
-    [Range(0f, 1f)]
-    [SerializeField]
-    private float spriteFlipCoolDown = 0.275f;
-    private float spriteFlipCoolDownTimer = 0f;
-
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -40,23 +34,15 @@ public class Aiming : MonoBehaviour
 
         float zRotation = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         PlayerMovement playerMovement = this.transform.parent.GetComponent<PlayerMovement>();
-        if (spriteFlipCoolDownTimer <= 0)
+        if (zRotation < 90 && zRotation > -90)
         {
-            spriteFlipCoolDownTimer = this.spriteFlipCoolDown;
-            if (zRotation < 90 && zRotation > -90)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().flipY = false;
-                this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[1];
-            }
-            else
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().flipY = true;
-                this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[0];
-            }
+            this.gameObject.GetComponent<SpriteRenderer>().flipY = false;
+            this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[1];
         }
         else
         {
-            spriteFlipCoolDownTimer -= Time.fixedDeltaTime;
+            this.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[0];
         }
 
         float recoilAndRecovery = this.firing.FireAndReturnRecoil();
