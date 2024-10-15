@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] bool canMove;//locks movement
 
+    private float jumpTimeCounter;
+    public float jumpTime;
+
     void Start()
     {
 
@@ -33,8 +36,25 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
+            jumpTimeCounter = jumpTime;
+
             body.velocity = Vector2.up * velocity;
             StartCoroutine(changeJumpBoost());
+
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+
+            if (jumpTimeCounter > 0)
+            {
+
+                body.velocity = Vector2.up * velocity;
+                StartCoroutine(changeJumpBoost());
+
+                jumpTimeCounter -= Time.deltaTime;
+
+            }  
 
         }
         //movement setup
@@ -54,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     
-    //jump friction -- velocity decreases over time
+    //jump friction -- velocity changes value for a millisecond
     IEnumerator changeJumpBoost()
     {
 
@@ -64,27 +84,6 @@ public class PlayerMovement : MonoBehaviour
 
         velocity = 5;
 
-        /*
-        velocity -= 0.4f;
-
-
-    yield return new WaitForSeconds(0.05f);
-
-    if (velocity > 0)
-    {
-
-        StartCoroutine(changeJumpBoost());
-
-    }
-    else
-    {
-
-        StopCoroutine(changeJumpBoost());
-        velocity = 5;
-
-    }
-  
-*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -96,14 +95,6 @@ public class PlayerMovement : MonoBehaviour
             canMove = true;
 
         }
-
-        /*if (collision.gameObject.tag == "AimCheck")
-        {
-
-            canAim = true;
-
-        }
-        */
 
     }
 

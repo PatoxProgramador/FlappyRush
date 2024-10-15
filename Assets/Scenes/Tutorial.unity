@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &334195634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2882,6 +2882,10 @@ PrefabInstance:
     - target: {fileID: 3117619915907785991, guid: 11c9f99558c1f284c93d06aa05b5eceb, type: 3}
       propertyPath: m_Offset.y
       value: -0.37645602
+      objectReference: {fileID: 0}
+    - target: {fileID: 5419551079420283705, guid: 11c9f99558c1f284c93d06aa05b5eceb, type: 3}
+      propertyPath: jumpTime
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6915172313714275024, guid: 11c9f99558c1f284c93d06aa05b5eceb, type: 3}
       propertyPath: bulletSpawnPointLeft

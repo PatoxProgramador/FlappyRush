@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Firing : MonoBehaviour
 {
+
     [SerializeField]
     private GameObject bulletSpawnPointRight;
     [SerializeField]
@@ -24,28 +25,42 @@ public class Firing : MonoBehaviour
     // Update is called once per frame
     public float FireAndReturnRecoil()
     {
+
         if (Input.GetMouseButton(0) && fireTimer <= 0)
         {
+
             return this.shoot();
+
         }
         else
         {
+
             fireTimer -= Time.fixedDeltaTime;
+
         }
         return 0;
+
     }
 
     private float shoot()
     {
+
         if (!this.transform.parent.GetComponent<SpriteRenderer>().flipY)
         {
+
             Instantiate(bulletPrefab, this.bulletSpawnPointRight.transform.position, this.bulletSpawnPointRight.transform.rotation);
+
         }
         else
         {
+
             Instantiate(bulletPrefab, this.bulletSpawnPointLeft.transform.position, this.bulletSpawnPointLeft.transform.rotation);
+
         }
+
         this.fireTimer = this.fireRate;
         return this.recoil;
+
     }
+
 }

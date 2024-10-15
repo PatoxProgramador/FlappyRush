@@ -16,22 +16,29 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
+
         _rigidbody = GetComponent<Rigidbody2D>();
         Destroy(gameObject, _lifeTime);
+
     }
 
     private void FixedUpdate()
     {
+
         _rigidbody.velocity = transform.up * _speed;
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag != "player" && other.tag != "AimCheck" && other.tag != "MoveCheck")
         {
 
             Destroy(gameObject);
 
         }
+
     }
+
 }
