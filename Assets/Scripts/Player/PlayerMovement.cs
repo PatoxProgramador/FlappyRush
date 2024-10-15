@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
-            //body.velocity = Vector2.up * velocity;
+            body.velocity = Vector2.up * velocity;
             StartCoroutine(changeJumpBoost());
 
         }
@@ -52,30 +52,39 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
+    
     //jump friction -- velocity decreases over time
     IEnumerator changeJumpBoost()
     {
-        
-        velocity -= 0.4f;
-        body.velocity = Vector2.up * velocity;
+
+        velocity = 3;
 
         yield return new WaitForSeconds(0.05f);
 
-        if (velocity > 0)
-        {
+        velocity = 5;
 
-            StartCoroutine(changeJumpBoost());
-
-        }
-        else
-        {
-
-            StopCoroutine(changeJumpBoost());
-            velocity = 5;
-
-        }
+        /*
+        velocity -= 0.4f;
 
 
+    yield return new WaitForSeconds(0.05f);
+
+    if (velocity > 0)
+    {
+
+        StartCoroutine(changeJumpBoost());
+
+    }
+    else
+    {
+
+        StopCoroutine(changeJumpBoost());
+        velocity = 5;
+
+    }
+  
+*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
