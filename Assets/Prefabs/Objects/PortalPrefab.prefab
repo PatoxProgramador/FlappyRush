@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7007259944337133768}
   m_Layer: 0
   m_Name: Portal B
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6770276780288499532}
   m_Layer: 0
   m_Name: Portal A
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
