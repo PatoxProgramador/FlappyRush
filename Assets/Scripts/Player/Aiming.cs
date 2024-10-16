@@ -26,28 +26,34 @@ public class Aiming : MonoBehaviour
 
     void FixedUpdate()
     {
-        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);// cursor location
-
-        Vector3 rotation = mousePos - transform.position;
-
-        float zRotation = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        PlayerMovement playerMovement = this.transform.parent.GetComponent<PlayerMovement>();
-        if (zRotation < 90 && zRotation > -90)
+        if (!Pause.isPaused)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().flipY = false;
-            this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[1];
-            this.transform.localPosition = new Vector3(0.13f,-0.32f,0f);        
-        }
-        else
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().flipY = true;
-            this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[0];
-            this.transform.localPosition = new Vector3(-0.13f,-0.32f,0f);
-        }
 
-        float recoilAndRecovery = this.firing.FireAndReturnRecoil();
-        var newRoation = Quaternion.Euler(0, 0, zRotation + recoilAndRecovery);
-        transform.rotation = Quaternion.Lerp(transform.rotation, newRoation, Time.fixedDeltaTime * aimSpeed);
+            mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);// cursor location
+
+            Vector3 rotation = mousePos - transform.position;
+
+            float zRotation = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
+            PlayerMovement playerMovement = this.transform.parent.GetComponent<PlayerMovement>();
+            if (zRotation < 90 && zRotation > -90)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().flipY = false;
+                this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[1];
+                this.transform.localPosition = new Vector3(0.13f, -0.32f, 0f);
+            }
+            else
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+                this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[0];
+                this.transform.localPosition = new Vector3(-0.13f, -0.32f, 0f);
+            }
+
+            float recoilAndRecovery = this.firing.FireAndReturnRecoil();
+            var newRoation = Quaternion.Euler(0, 0, zRotation + recoilAndRecovery);
+            transform.rotation = Quaternion.Lerp(transform.rotation, newRoation, Time.fixedDeltaTime * aimSpeed);
+
+        }
+        
     }
 
     private void FindBulletSpawnPoint()

@@ -16,7 +16,7 @@ public class SceneChange : MonoBehaviour
     
     void Start()
     {
-
+        //pause script and prefab in titlescreen
         wait = false;
         script.enabled = false;
         pause.SetActive(false);
@@ -54,6 +54,7 @@ public class SceneChange : MonoBehaviour
         pause.SetActive(true);
         script.enabled = true;
         wait = true;
+        Pause.isPaused = true;
 
     }
 

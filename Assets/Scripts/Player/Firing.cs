@@ -28,18 +28,24 @@ public class Firing : MonoBehaviour
     public float FireAndReturnRecoil()
     {
 
-        if (Input.GetMouseButton(0) && fireTimer <= firingSpeed)
+        if (!Pause.isPaused)
         {
 
-            return this.shoot();
+            if (Input.GetMouseButton(0) && fireTimer <= firingSpeed)
+            {
+
+                return this.shoot();
+
+            }
+            else
+            {
+
+                fireTimer -= Time.fixedDeltaTime;
+
+            }
 
         }
-        else
-        {
 
-            fireTimer -= Time.fixedDeltaTime;
-
-        }
         return 0;
 
     }

@@ -32,43 +32,54 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        //jump mechanic
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!Pause.isPaused)
         {
 
-            jumpTimeCounter = jumpTime;
-            body.velocity = Vector2.up * velocity;
-            StartCoroutine(changeJumpBoost());
-
-        }
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-
-            if (jumpTimeCounter > 0)
+            //jump mechanic
+            if (Input.GetKeyDown(KeyCode.Space))
             {
 
+                jumpTimeCounter = jumpTime;
                 body.velocity = Vector2.up * velocity;
                 StartCoroutine(changeJumpBoost());
 
-                jumpTimeCounter -= Time.deltaTime;
+            }
 
-            }  
+            if (Input.GetKey(KeyCode.Space))
+            {
+
+                if (jumpTimeCounter > 0)
+                {
+
+                    body.velocity = Vector2.up * velocity;
+                    StartCoroutine(changeJumpBoost());
+
+                    jumpTimeCounter -= Time.deltaTime;
+
+                }
+
+            }
+            //movement setup
+            horizontal = Input.GetAxisRaw("Horizontal");
 
         }
-        //movement setup
-        horizontal = Input.GetAxisRaw("Horizontal");
-
+       
     }
 
     private void FixedUpdate()
     {
-        if (canMove)
+        if (!Pause.isPaused)
         {
-            // movement action
-            body.velocity = new Vector2(horizontal * speed, body.velocity.y);
+
+            if (canMove)
+            {
+                // movement action
+                body.velocity = new Vector2(horizontal * speed, body.velocity.y);
+
+            }
 
         }
+        
 
     }
 
