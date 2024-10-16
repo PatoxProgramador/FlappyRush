@@ -6,12 +6,9 @@ TagManager:
   tags:
   - MoveCheck
   - AimCheck
-<<<<<<< Updated upstream
-  - enemy
-=======
   - Portal
   - Pause
->>>>>>> Stashed changes
+  - enemy
   layers:
   - Default
   - TransparentFX
