@@ -8,10 +8,19 @@ public class SceneChange : MonoBehaviour
 {
 
     public string SceneName;
+
+    public GameObject pause;
+    public Pause script;
+
+    public static bool wait;
     
     void Start()
     {
-        
+
+        wait = false;
+        script.enabled = false;
+        pause.SetActive(false);
+
     }
 
     void Update()
@@ -36,6 +45,15 @@ public class SceneChange : MonoBehaviour
         #endif
 
             Application.Quit();
+
+    }
+
+    public void OptionsButton()
+    {
+
+        pause.SetActive(true);
+        script.enabled = true;
+        wait = true;
 
     }
 

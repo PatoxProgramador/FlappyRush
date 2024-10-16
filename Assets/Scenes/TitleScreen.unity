@@ -812,7 +812,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1374212598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2024146675}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: OptionsButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1374212598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,6 +996,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377588413}
   m_CullTransparentMesh: 1
+--- !u!1 &1644835284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4878256149501630976, guid: 03956cbbccfdb6242b248289aa2a6108, type: 3}
+  m_PrefabInstance: {fileID: 2083679157959618546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1644835289 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6215427176864151056, guid: 03956cbbccfdb6242b248289aa2a6108, type: 3}
+  m_PrefabInstance: {fileID: 2083679157959618546}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644835284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34424f88a102dd449013f08a40fffd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1901483222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,6 +1265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Tutorial
+  pause: {fileID: 1644835284}
+  script: {fileID: 1644835289}
 --- !u!1 &2113383956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,6 +1412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause
       objectReference: {fileID: 0}
+    - target: {fileID: 6215427176864151056, guid: 03956cbbccfdb6242b248289aa2a6108, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2024146670}
     - target: {fileID: 8895173199505104518, guid: 03956cbbccfdb6242b248289aa2a6108, type: 3}
       propertyPath: m_Pivot.x
       value: 0
