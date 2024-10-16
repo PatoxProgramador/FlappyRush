@@ -737,6 +737,7 @@ MonoBehaviour:
   - {fileID: 357760971}
   - {fileID: 963372338}
   - {fileID: 934281003}
+  - {fileID: 334195633}
 --- !u!1 &1050631233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3525,6 +3526,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3729203591383763480, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
+      propertyPath: playerPos
+      value: 
+      objectReference: {fileID: 1625135721}
+    - target: {fileID: 3729203591383763480, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
+      propertyPath: checkPointPos
+      value: 
+      objectReference: {fileID: 1006865121}
     - target: {fileID: 7524574329683582484, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
       propertyPath: m_Name
       value: enemy
