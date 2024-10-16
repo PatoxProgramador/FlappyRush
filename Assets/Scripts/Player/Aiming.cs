@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Aiming : MonoBehaviour
 {
-
     private Camera mainCam;
 
     private Vector3 mousePos;
@@ -27,7 +26,6 @@ public class Aiming : MonoBehaviour
 
     void FixedUpdate()
     {
-
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);// cursor location
 
         Vector3 rotation = mousePos - transform.position;
@@ -38,7 +36,7 @@ public class Aiming : MonoBehaviour
         {
             this.gameObject.GetComponent<SpriteRenderer>().flipY = false;
             this.transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite = playerMovement.faces[1];
-            this.transform.localPosition = new Vector3(0.13f,-0.32f,0f);
+            this.transform.localPosition = new Vector3(0.13f,-0.32f,0f);        
         }
         else
         {

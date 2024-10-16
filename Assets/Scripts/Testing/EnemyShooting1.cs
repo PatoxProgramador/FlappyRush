@@ -17,7 +17,7 @@ public class EnemyShooting1 : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 2)
+        if (timer > 1f)
         {
             timer = 0;
             shoot();

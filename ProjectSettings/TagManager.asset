@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MoveCheck
   - AimCheck
+  - enemy
   layers:
   - Default
   - TransparentFX
