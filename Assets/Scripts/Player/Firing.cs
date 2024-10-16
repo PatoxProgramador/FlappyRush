@@ -21,12 +21,14 @@ public class Firing : MonoBehaviour
     [Range(1f, 100f)]
     [SerializeField]
     private float recoil = 30;
+    [Range(0f, 1f)]
+    public float firingSpeed;
 
     // Update is called once per frame
     public float FireAndReturnRecoil()
     {
 
-        if (Input.GetMouseButton(0) && fireTimer <= 0)
+        if (Input.GetMouseButton(0) && fireTimer <= firingSpeed)
         {
 
             return this.shoot();
