@@ -22,11 +22,14 @@ public class PlayerMovement : MonoBehaviour
     private float jumpTimeCounter;
     public float jumpTime;
 
+    AudioSource jumpFlap;
+
     void Start()
     {
 
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        jumpFlap = GetComponent<AudioSource>();
 
     }
 
@@ -37,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             jumpTimeCounter = jumpTime;
-
+            jumpFlap.Play();
             body.velocity = Vector2.up * velocity;
             StartCoroutine(changeJumpBoost());
 
@@ -50,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
             {
 
                 body.velocity = Vector2.up * velocity;
+                //jumpFlap.Play();
                 StartCoroutine(changeJumpBoost());
 
                 jumpTimeCounter -= Time.deltaTime;
