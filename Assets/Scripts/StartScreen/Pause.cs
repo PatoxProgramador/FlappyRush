@@ -9,7 +9,7 @@ public class Pause : MonoBehaviour
 {
 
     public GameObject canvas;
-    public GameObject resumeButton; 
+    public GameObject backButton;
 
     public string sceneName;
 
@@ -18,25 +18,28 @@ public class Pause : MonoBehaviour
     void Start()
     {
 
+        UnPaused();
+
     }
 
     void Update()
     {
 
         Time.timeScale = 0.0f;
-
+        
         if (sceneName.Equals("TitleScreen"))
         {
 
-            resumeButton.SetActive(false);
+            backButton.SetActive(false);
 
         }
         else
         {
 
-            resumeButton.SetActive(true);
-
+            backButton.SetActive(true);
+        
         }
+        
        //prvents pause from coming out in beggining of game - start scene
         if (SceneChange.wait && sceneName.Equals("TitleScreen"))
         {
@@ -48,15 +51,7 @@ public class Pause : MonoBehaviour
     }
 
     public void BackButton()
-    {
-
-        if (sceneName.Equals("TitleScreen"))
-        {
-
-            //start scene goes back to cover of game
-            canvas.SetActive(true);
-
-        }  
+    { 
         
         UnPaused();
 
@@ -76,12 +71,25 @@ public class Pause : MonoBehaviour
     public void UnPaused()
     {
 
-        gameObject.SetActive(false);
-        enabled = false;
-        SceneChange.wait = false;
+        if (!Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.Return))
+        {
 
-        Time.timeScale = 1.0f;
-        isPaused = false;
+            gameObject.SetActive(false);
+            enabled = false;
+            SceneChange.wait = false;
+
+            Time.timeScale = 1.0f;
+            isPaused = false;
+
+        } 
+
+        if (sceneName.Equals("TitleScreen"))
+        {
+
+            //start scene goes back to cover of game
+            canvas.SetActive(true);
+
+        }
 
     }
 
@@ -89,7 +97,6 @@ public class Pause : MonoBehaviour
     {
 
         UnPaused();
-        Time.timeScale = 1.0f;
         SceneManager.LoadScene("TitleScreen");
 
     }
