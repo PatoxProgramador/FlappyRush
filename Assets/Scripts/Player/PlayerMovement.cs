@@ -32,37 +32,44 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (!Pause.isPaused)
-        {
-
             //jump mechanic
             if (Input.GetKeyDown(KeyCode.Space))
             {
 
-                jumpTimeCounter = jumpTime;
-                body.velocity = Vector2.up * velocity;
-                StartCoroutine(changeJumpBoost());
+                if (!Pause.isPaused)
+                {
+
+                    jumpTimeCounter = jumpTime;
+                    body.velocity = Vector2.up * velocity;
+                    StartCoroutine(changeJumpBoost());
+
+                }
+                
 
             }
 
             if (Input.GetKey(KeyCode.Space))
             {
 
-                if (jumpTimeCounter > 0)
+                if (!Pause.isPaused)
                 {
 
-                    body.velocity = Vector2.up * velocity;
-                    StartCoroutine(changeJumpBoost());
+                    if (jumpTimeCounter > 0)
+                    {
 
-                    jumpTimeCounter -= Time.deltaTime;
+                        body.velocity = Vector2.up * velocity;
+                    
+                        StartCoroutine(changeJumpBoost());
+
+                        jumpTimeCounter -= Time.deltaTime;
+
+                    }  
 
                 }
 
             }
             //movement setup
             horizontal = Input.GetAxisRaw("Horizontal");
-
-        }
        
     }
 

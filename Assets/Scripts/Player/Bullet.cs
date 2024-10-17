@@ -39,13 +39,7 @@ public class Bullet : MonoBehaviour
 
         for(int i = 0; i<tags.Length; i++)
         {
-            //if statement was getting to0 big so i made an array to store all of the tags
-
-            /* if (other.tag != "Player" && other.tag != "AimCheck" && other.tag != "MoveCheck" && other.tag != "Portal" && other.tag != "EnemyCheck")
-             {
-                 Destroy(gameObject);
-             }*/
-
+            
             //keeps track of each tag 'flag'
             count++;
             //check for specific tag

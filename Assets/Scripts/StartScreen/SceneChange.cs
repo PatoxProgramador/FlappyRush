@@ -25,7 +25,14 @@ public class SceneChange : MonoBehaviour
 
     void Update()
     {
-        
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+
+            script.Paused();
+
+        }
+
     }
 
     public void StartButton()
@@ -50,11 +57,16 @@ public class SceneChange : MonoBehaviour
 
     public void OptionsButton()
     {
-
+ 
         pause.SetActive(true);
+
+        /*
         script.enabled = true;
         wait = true;
         Pause.isPaused = true;
+        */
+
+        script.Paused();
 
     }
 
