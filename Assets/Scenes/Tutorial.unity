@@ -3780,6 +3780,22 @@ PrefabInstance:
       propertyPath: checkPointPos
       value: 
       objectReference: {fileID: 1006865121}
+    - target: {fileID: 5310834454353400756, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310834454353400756, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310834454353400756, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310834454353400756, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7524574329683582484, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
       propertyPath: m_Name
       value: enemy
