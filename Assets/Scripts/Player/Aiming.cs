@@ -70,4 +70,28 @@ public class Aiming : MonoBehaviour
             Debug.LogError("Failed to find Firing script on BulletSpawnPoint");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        if(collision.tag == "Zoom")
+        {
+
+            CameraZoom.isZoom = true;
+
+        }
+
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+
+        if (collision.tag == "Zoom")
+        {
+
+            CameraZoom.isZoom = false;
+
+        }
+
+    }
+
 }

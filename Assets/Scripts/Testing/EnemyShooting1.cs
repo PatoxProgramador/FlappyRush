@@ -39,6 +39,9 @@ public class EnemyShooting1 : MonoBehaviour
 
     void shoot ()
     {
+
         Instantiate (bullet, bulletPos.position, Quaternion.identity);
+
     }
+
 }

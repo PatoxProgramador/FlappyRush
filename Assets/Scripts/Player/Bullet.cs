@@ -13,6 +13,8 @@ public class Bullet : MonoBehaviour
     private float _lifeTime = 3f;
 
     private Rigidbody2D _rigidbody;
+    // add another string to the list if there is another tag the bullet need to avoid
+    string[] tags = {"Player","AimCheck","MoveCheck","Portal","EnemyCheck","Zoom"};
 
     private void Start()
     {
@@ -32,10 +34,39 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.tag != "player" && other.tag != "AimCheck" && other.tag != "MoveCheck" && other.tag != "Portal" && other.tag != "EnemyCheck")
-        {
+        int count = 0;
+        int replica = 0;
 
-            Destroy(gameObject);
+        for(int i = 0; i<tags.Length; i++)
+        {
+            //if statement was getting to0 big so i made an array to store all of the tags
+
+            /* if (other.tag != "Player" && other.tag != "AimCheck" && other.tag != "MoveCheck" && other.tag != "Portal" && other.tag != "EnemyCheck")
+             {
+                 Destroy(gameObject);
+             }*/
+
+            //keeps track of each tag 'flag'
+            count++;
+            //check for specific tag
+            if (other.tag != tags[i])
+            { 
+                //check if every tag are check out
+                if (i < tags.Length-1 && replica == count-1)
+                {
+                    //does taht until it in the end of array
+                    replica = count;
+                    continue;
+
+                }
+                else if(i >= tags.Length-1 && replica == count-1)
+                {
+                    //finally does its job
+                    Destroy(gameObject);
+
+                }  
+
+            }
 
         }
 

@@ -6,6 +6,7 @@ public class CameraZoom : MonoBehaviour
 {
     public GameObject player;
     private float zoom;
+    private float ogZoom;
     private float zoomMultiplier = 4f;
     private float minZoom = 2f;
     public float maxZoom = 7f;
@@ -13,20 +14,39 @@ public class CameraZoom : MonoBehaviour
     private float smoothTime = 0.25f;
     public float zoomspeed = 1.1f;
     [SerializeField] private Camera cam;
-    // Start is called before the first frame update
+
+    public static bool isZoom;
+   
     void Start()
     {
+
         zoom = cam.orthographicSize;
+        ogZoom = zoom;
+
+        isZoom = false;
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (player.transform.position.x > 10.56f)
+
+        if (isZoom)
         {
+
         zoom += zoomspeed * zoomMultiplier;
         zoom = Mathf.Clamp(zoom, minZoom, maxZoom);
         cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, zoom, ref velocity, smoothTime);
+
         }
+        else
+        {
+
+           zoom = ogZoom;
+           zoom = Mathf.Clamp(zoom, minZoom, maxZoom);
+           cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, zoom, ref velocity, smoothTime);
+
+        }
+
     }
+
 }
