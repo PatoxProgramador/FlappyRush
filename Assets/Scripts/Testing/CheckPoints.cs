@@ -33,7 +33,13 @@ public class CheckPoints : MonoBehaviour
             for (int i = 0; i < unlockable.Length; i++)
             {
 
-                unlockable[i].SetActive(true);
+                if (unlockable[i] != null)
+                {
+
+                    unlockable[i].SetActive(true);
+
+                }
+                
 
             }
 
