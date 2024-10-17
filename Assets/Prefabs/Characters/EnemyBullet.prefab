@@ -8,8 +8,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7465395811426300941, guid: 032f94641e59e7b43aea20d12e1c9932, type: 3}
+      propertyPath: m_PreviewTimeScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2609264721298096948, guid: 032f94641e59e7b43aea20d12e1c9932, type: 3}
       propertyPath: m_Name
+      value: EnemyBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609264721298096948, guid: 032f94641e59e7b43aea20d12e1c9932, type: 3}
+      propertyPath: m_TagString
       value: EnemyBullet
       objectReference: {fileID: 0}
     - target: {fileID: 7391780245244444283, guid: 032f94641e59e7b43aea20d12e1c9932, type: 3}

@@ -32,7 +32,7 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.tag != "player" && other.tag != "AimCheck" && other.tag != "MoveCheck" && other.tag != "Portal")
+        if (other.tag != "player" && other.tag != "AimCheck" && other.tag != "MoveCheck" && other.tag != "Portal" && other.tag != "EnemyCheck")
         {
 
             Destroy(gameObject);

@@ -9,6 +9,9 @@ TagManager:
   - Portal
   - Pause
   - enemy
+  - EnemyCheck
+  - PlayerBullet
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

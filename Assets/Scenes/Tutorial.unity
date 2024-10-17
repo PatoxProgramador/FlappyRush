@@ -147,6 +147,19 @@ MonoBehaviour:
   minX: 11
   minY: 2
   maxY: 16
+--- !u!114 &334195643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334195633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd021b2b16b7ee4ba4cdb6b6e82fb23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
 --- !u!1 &357760971
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +668,7 @@ GameObject:
   - component: {fileID: 1006865122}
   - component: {fileID: 1006865124}
   m_Layer: 0
-  m_Name: CheckPoint (1)
+  m_Name: AimCheck
   m_TagString: AimCheck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -737,7 +750,6 @@ MonoBehaviour:
   - {fileID: 357760971}
   - {fileID: 963372338}
   - {fileID: 934281003}
-  - {fileID: 334195633}
 --- !u!1 &1050631233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,6 +2692,7 @@ GameObject:
   - component: {fileID: 1519999620}
   - component: {fileID: 1519999623}
   - component: {fileID: 1519999624}
+  - component: {fileID: 1519999625}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2820,6 +2833,22 @@ MonoBehaviour:
   followSpeed: 0.1
   yOffset: 0
   target: {fileID: 1625135722}
+--- !u!114 &1519999625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519999619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa93d2e23141a40458e8b4429ce8ff70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1625135721}
+  maxZoom: 7
+  zoomspeed: 1.1
+  cam: {fileID: 1519999621}
 --- !u!1001 &1586966318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3051,6 +3080,98 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884974938}
   m_CullTransparentMesh: 1
+--- !u!1 &1908535581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1908535584}
+  - component: {fileID: 1908535583}
+  - component: {fileID: 1908535582}
+  m_Layer: 0
+  m_Name: EnemyCheck
+  m_TagString: EnemyCheck
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1908535582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908535581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00484b568aa9d974698c77f56adb522c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlockable:
+  - {fileID: 334195633}
+--- !u!61 &1908535583
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908535581}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.59134626, y: 0.6199789}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.935854, y: 5.9450817}
+  m_EdgeRadius: 0
+--- !u!4 &1908535584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908535581}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.36, y: 8.37, z: 70.89601}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1987669471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3062,7 +3183,7 @@ GameObject:
   - component: {fileID: 1987669473}
   - component: {fileID: 1987669472}
   m_Layer: 0
-  m_Name: CheckPoint
+  m_Name: MoveCheck
   m_TagString: MoveCheck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3490,6 +3611,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3251404084086587504, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3253270424221569176, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.8
@@ -3549,6 +3674,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7524574329683582484, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 334195638}
+    - targetCorrespondingSourceObject: {fileID: 7524574329683582484, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 334195643}
   m_SourcePrefab: {fileID: 100100000, guid: 947285f5e1594a14bb8683ff8a51597e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -3562,6 +3690,7 @@ SceneRoots:
   - {fileID: 2006719292}
   - {fileID: 1987669473}
   - {fileID: 1006865123}
+  - {fileID: 1908535584}
   - {fileID: 1134316939}
   - {fileID: 1178672771568176639}
   - {fileID: 406282676}
