@@ -32,11 +32,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-            //jump mechanic
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
 
-                if (!Pause.isPaused)
+        if (!Pause.isPaused)
+        {
+
+                //jump mechanic
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
 
                     jumpTimeCounter = jumpTime;
@@ -44,37 +45,31 @@ public class PlayerMovement : MonoBehaviour
                     StartCoroutine(changeJumpBoost());
 
                 }
-                
-
-            }
-
-            if (Input.GetKey(KeyCode.Space))
-            {
-
-                if (!Pause.isPaused)
+                if (Input.GetKey(KeyCode.Space))
                 {
 
                     if (jumpTimeCounter > 0)
                     {
 
                         body.velocity = Vector2.up * velocity;
-                    
+
                         StartCoroutine(changeJumpBoost());
 
                         jumpTimeCounter -= Time.deltaTime;
 
-                    }  
+                    }
 
                 }
+                //movement setup
+                horizontal = Input.GetAxisRaw("Horizontal");
 
-            }
-            //movement setup
-            horizontal = Input.GetAxisRaw("Horizontal");
+        }
        
     }
-
+    
     private void FixedUpdate()
     {
+
         if (!Pause.isPaused)
         {
 
@@ -89,7 +84,6 @@ public class PlayerMovement : MonoBehaviour
         
 
     }
-
     
     //jump friction -- velocity changes value for a millisecond
     IEnumerator changeJumpBoost()
