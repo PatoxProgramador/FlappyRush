@@ -25,24 +25,30 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        //moving towards location
-        transform.position = Vector2.MoveTowards(transform.position, moveSpot.position, speed * Time.deltaTime);
-        //reach the position
-        if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
+        //decides whether enemyMovement or follow is interactable
+        if (!CameraZoom.isZoom)
         {
-            //time for enemy to move
-            if (waitTime <= 0)
+
+            //moving towards location
+            transform.position = Vector2.MoveTowards(transform.position, moveSpot.position, speed * Time.deltaTime);
+            //reach the position
+            if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
             {
-                //new target
-                moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+                //time for enemy to move
+                if (waitTime <= 0)
+                {
+                    //new target
+                    moveSpot.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
 
-                waitTime = startWaitTime;
+                    waitTime = startWaitTime;
 
-            }
-            else
-            {
+                }
+                else
+                {
 
-                waitTime -= Time.deltaTime;
+                    waitTime -= Time.deltaTime;
+
+                }
 
             }
 

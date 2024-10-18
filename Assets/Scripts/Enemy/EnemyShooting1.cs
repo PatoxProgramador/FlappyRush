@@ -11,8 +11,12 @@ public class EnemyShooting1 : MonoBehaviour
     public GameObject checkPointPos;
     public GameObject playerPos;
 
+    public static bool isShooting;
+
     void Start()
     {
+
+        isShooting = false;
 
     }
 
@@ -22,18 +26,22 @@ public class EnemyShooting1 : MonoBehaviour
         float distanceCheck = Vector2.Distance(checkPointPos.transform.position, gameObject.transform.position);
         float distancePlayer = Vector2.Distance(playerPos.transform.position, gameObject.transform.position);
 
-        if (distancePlayer < distanceCheck)
+        if (isShooting)
         {
 
-            timer += Time.deltaTime;
-            if (timer > 1f)
+            if (distancePlayer < distanceCheck)
             {
-                timer = 0;
-                shoot();
+
+                timer += Time.deltaTime;
+                if (timer > 1f)
+                {
+                    timer = 0;
+                    shoot();
+                }
+
             }
 
-        }
-        
+        }   
 
     }
 
