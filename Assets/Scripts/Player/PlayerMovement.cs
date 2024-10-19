@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField] private float velocity = 5f;// jumping up force/speed
+    [SerializeField] public float velocity = 5f;// jumping up force/speed
     [SerializeField] public float speed = 1f;// movement speed
 
     public Sprite[] faces;
