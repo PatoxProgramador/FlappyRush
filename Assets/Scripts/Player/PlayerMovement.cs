@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
 
-    [SerializeField] bool canMove;//locks movement
+    //[SerializeField] bool canMove;//locks movement
 
     private float jumpTimeCounter;
     public float jumpTime;
@@ -73,12 +73,12 @@ public class PlayerMovement : MonoBehaviour
         if (!Pause.isPaused)
         {
 
-            if (canMove)
-            {
+           // if (canMove)
+           // {
                 // movement action
                 body.velocity = new Vector2(horizontal * speed, body.velocity.y);
 
-            }
+           // }
 
         }
 
@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         velocity = 5;
 
     }
-
+/*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //unlocks movement
@@ -107,5 +107,5 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-
+*/
 }
