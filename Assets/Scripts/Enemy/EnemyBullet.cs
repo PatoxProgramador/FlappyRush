@@ -27,20 +27,6 @@ public class EnemyBullet : MonoBehaviour
         if (other.tag != "enemy" && other.tag != "AimCheck" && other.tag != "Zoom" && other.tag != "EnemyCheck")
         {
 
-            if (other.tag == "Player")
-            {
-
-                var life = other.GetComponent<PlayerHealth>();
-
-                if (life != null)
-                {
-
-                    life.TakeDamage(1);
-
-                }
-
-            }
-
             Destroy(gameObject);
 
         }

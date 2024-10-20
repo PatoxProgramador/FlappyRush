@@ -18,6 +18,8 @@ public class Aiming : MonoBehaviour
     [SerializeField]
     private float aimSpeed = 10f;
 
+    public PlayerHealth life;
+
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -78,6 +80,18 @@ public class Aiming : MonoBehaviour
         {
 
             CameraZoom.isZoom = true;
+
+        }
+
+        if (collision.tag == "EnemyBullet")
+        {
+
+            if (life != null)
+            {
+
+                life.TakeDamage(1);
+
+            }
 
         }
 
