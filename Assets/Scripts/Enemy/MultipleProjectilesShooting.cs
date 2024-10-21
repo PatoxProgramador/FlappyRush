@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MultipleProjectilesShooting : MonoBehaviour
 {
-    public GameObject bullet1;
-    public GameObject bullet2; 
-    public GameObject bullet3; 
+
+    public GameObject[] bullets;
+
     public Transform bulletPos; 
+
     private float timer;
 
     public GameObject checkPointPos; 
@@ -35,19 +36,19 @@ public class MultipleProjectilesShooting : MonoBehaviour
 
     void Shoot()
     {
-        int randomBullet = Random.Range(1, 4); // Random.Range should have a capital 'R' and an exclusive upper bound
+        int randomBullet = Random.Range(1, bullets.Length); // Random.Range should have a capital 'R' and an exclusive upper bound
 
-        if (randomBullet == 1)
+        for (int i = 0; i < bullets.Length; i++)
         {
-            Instantiate(bullet1, bulletPos.position, bulletPos.rotation);
+
+            if (randomBullet == i)
+            {
+
+                Instantiate(bullets[i], bulletPos.position, bulletPos.rotation);
+
+            }
+
         }
-        else if (randomBullet == 2)
-        {
-            Instantiate(bullet2, bulletPos.position, bulletPos.rotation);
-        }
-        else if (randomBullet == 3)
-        {
-            Instantiate(bullet3, bulletPos.position, bulletPos.rotation);
-        }
+       
     }
 }

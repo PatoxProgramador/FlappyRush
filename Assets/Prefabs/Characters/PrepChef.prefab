@@ -351,6 +351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186fc41c904ec564394437ee52a3b451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolChange: {fileID: 0}
+  isShooting: 0
   shootingDistance: 5
   startFollowDistance: 7
 --- !u!114 &-2915812060541237139
@@ -365,12 +367,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62a32618fbfeff4e89b97a348414f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet1: {fileID: 274916002492899262, guid: 06852007fe729cb44b6c440544182118, type: 3}
-  bullet2: {fileID: 274916002492899262, guid: 7e1e41a10fcd9b04099a5034d39c6813, type: 3}
-  bullet3: {fileID: 274916002492899262, guid: d53e9bcf77170f74899e56457e7c4027, type: 3}
+  bullets:
+  - {fileID: 274916002492899262, guid: 7e1e41a10fcd9b04099a5034d39c6813, type: 3}
+  - {fileID: 274916002492899262, guid: 06852007fe729cb44b6c440544182118, type: 3}
+  - {fileID: 274916002492899262, guid: d53e9bcf77170f74899e56457e7c4027, type: 3}
   bulletPos: {fileID: 7593313428198057832}
   checkPointPos: {fileID: 0}
   playerPos: {fileID: 0}
+  allowance: {fileID: 0}
 --- !u!1 &5945384152977109473
 GameObject:
   m_ObjectHideFlags: 0
