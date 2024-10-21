@@ -179,11 +179,11 @@ GameObject:
   m_Component:
   - component: {fileID: 383187667839383063}
   - component: {fileID: 5264936805442955218}
-  - component: {fileID: 4235998560821040063}
   - component: {fileID: 2419444137769288776}
   - component: {fileID: 1246356841233619788}
   - component: {fileID: 3173289098596571602}
   - component: {fileID: 2118228082336291884}
+  - component: {fileID: -2915812060541237139}
   m_Layer: 0
   m_Name: PrepChef
   m_TagString: enemy
@@ -260,22 +260,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4235998560821040063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5690863863575491725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc16c9d3cee89341bcbab639ea828cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 274916002492899262, guid: d45121de65a697643b8a5c8546c8d2f3, type: 3}
-  bulletPos: {fileID: 7593313428198057832}
-  checkPointPos: {fileID: 0}
-  playerPos: {fileID: 0}
 --- !u!61 &2419444137769288776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -333,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ddc743a142a3f749815cdaee67579a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 4
   startWaitTime: 0.1
   moveSpot: {fileID: 0}
   maxX: 27
@@ -367,8 +351,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186fc41c904ec564394437ee52a3b451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingDistance: 3
+  shootingDistance: 5
   startFollowDistance: 7
+--- !u!114 &-2915812060541237139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690863863575491725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62a32618fbfeff4e89b97a348414f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullets:
+  - {fileID: 274916002492899262, guid: 9440408d70ac0c448b0f9185cc4066be, type: 3}
+  - {fileID: 274916002492899262, guid: 1abb6d228bd896846a76445f96dcd3ef, type: 3}
+  bulletPos: {fileID: 7593313428198057832}
+  checkPointPos: {fileID: 0}
+  playerPos: {fileID: 0}
 --- !u!1 &5945384152977109473
 GameObject:
   m_ObjectHideFlags: 0
