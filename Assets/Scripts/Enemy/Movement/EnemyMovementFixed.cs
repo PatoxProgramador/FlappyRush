@@ -39,13 +39,8 @@ public class EnemyMovementFixed : MonoBehaviour
 
     void Update()
     {
-        //decides whether enemyMovement or follow is interactable
-        //if (!CameraZoom.isZoom)
-        //{
-
+ 
             EnemyFollow();
-
-       // }
 
     }
 
