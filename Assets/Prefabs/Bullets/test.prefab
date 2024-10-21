@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2609264721298096948, guid: 032f94641e59e7b43aea20d12e1c9932, type: 3}
       propertyPath: m_Name
-      value: CommisChefBullet 1
+      value: test
       objectReference: {fileID: 0}
     - target: {fileID: 2609264721298096948, guid: 032f94641e59e7b43aea20d12e1c9932, type: 3}
       propertyPath: m_TagString

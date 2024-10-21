@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     //grabs speed for enemy movement script
-    EnemyMovement patrolChange;
+    [SerializeField] EnemyMovementFixed patrolChange;
+    public bool isShooting;
 
     public float shootingDistance,startFollowDistance;
 
@@ -15,7 +16,8 @@ public class EnemyFollow : MonoBehaviour
     {
         //get player location
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        patrolChange = GetComponent<EnemyMovement>();
+        isShooting = false;
+        patrolChange = GetComponent<EnemyMovementFixed>();
         
     }
 
@@ -26,20 +28,21 @@ public class EnemyFollow : MonoBehaviour
         if (Vector2.Distance(transform.position,target.position) > shootingDistance && Vector2.Distance(transform.position, target.position) < startFollowDistance && CameraZoom.isZoom)
         {
 
-            EnemyShooting1.isShooting = false;
+            isShooting = false;
             transform.position = Vector2.MoveTowards(transform.position, target.position, patrolChange.speed * Time.deltaTime);
 
         }
         else if (Vector2.Distance(transform.position, target.position) <= shootingDistance && CameraZoom.isZoom)
         {
 
-            EnemyShooting1.isShooting = true;
+            isShooting = true;
 
         }
         else
         {
 
-            EnemyShooting1.isShooting= false;
+            transform.position = Vector2.MoveTowards(transform.position, patrolChange.moveSpots[patrolChange.randomSpot].position, patrolChange.speed * Time.deltaTime);
+            isShooting = false;
 
         }
           

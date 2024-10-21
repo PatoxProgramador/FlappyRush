@@ -13,18 +13,20 @@ public class MultipleProjectilesShooting : MonoBehaviour
     public GameObject checkPointPos; 
     public GameObject playerPos; 
 
-    public static bool isShooting; 
+    [SerializeField] EnemyFollow allowance; 
 
     void Start()
     {
-        isShooting = true; 
+
+        allowance = GetComponent<EnemyFollow>();
+        
     }
 
     void Update()
     {
         timer += Time.deltaTime;
 
-        if (timer > 1f && isShooting)
+        if (timer > 1f && allowance.isShooting)
         {
             timer = 0; 
             Shoot();   

@@ -11,12 +11,12 @@ public class EnemyShooting1 : MonoBehaviour
     public GameObject checkPointPos;
     public GameObject playerPos;
 
-    public static bool isShooting;
+    [SerializeField] EnemyFollow allowance;
 
     void Start()
     {
 
-        isShooting = false;
+        allowance = GetComponent<EnemyFollow>();
 
     }
 
@@ -26,7 +26,7 @@ public class EnemyShooting1 : MonoBehaviour
         float distanceCheck = Vector2.Distance(checkPointPos.transform.position, gameObject.transform.position);
         float distancePlayer = Vector2.Distance(playerPos.transform.position, gameObject.transform.position);
 
-        if (isShooting)
+        if (allowance.isShooting)
         {
 
             if (distancePlayer < distanceCheck)

@@ -11,9 +11,7 @@ public class EnemyMovementFixed : MonoBehaviour
     public float startWaitTime;
 
     public Transform []moveSpots;
-    private int randomSpot;
-    //patrol borders
-    public float maxX,minX,minY,maxY;
+    public int randomSpot;
     
     void Start()
     {
@@ -31,10 +29,8 @@ public class EnemyMovementFixed : MonoBehaviour
         if (!CameraZoom.isZoom)
         {
 
-            //moving towards location
-            transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
             //reach the position
-            if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
+            if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.5f)
             {
                 //time for enemy to move
                 if (waitTime <= 0)
