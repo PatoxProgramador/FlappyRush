@@ -123,87 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &137251810
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -2915812060541237139, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: playerPos
-      value: 
-      objectReference: {fileID: 1625135721}
-    - target: {fileID: -2915812060541237139, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: checkPointPos
-      value: 
-      objectReference: {fileID: 1006865121}
-    - target: {fileID: -2915812060541237139, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: bullets.Array.data[0]
-      value: 
-      objectReference: {fileID: 274916002492899262, guid: 9440408d70ac0c448b0f9185cc4066be, type: 3}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 24.662254
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.573095
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 383187667839383063, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: moveSpot
-      value: 
-      objectReference: {fileID: 1127456785}
-    - target: {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_Name
-      value: PrepChef
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
 --- !u!1 &406282675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3081,7 +3000,7 @@ Transform:
   m_GameObject: {fileID: 2007081598}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.52, y: 14.04, z: 0}
+  m_LocalPosition: {x: 22.01, y: 6.26, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3264,4 +3183,3 @@ SceneRoots:
   - {fileID: 406282676}
   - {fileID: 708365043}
   - {fileID: 2007081602}
-  - {fileID: 137251810}
