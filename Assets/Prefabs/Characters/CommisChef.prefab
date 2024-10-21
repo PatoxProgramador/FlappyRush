@@ -181,9 +181,8 @@ GameObject:
   - component: {fileID: 5264936805442955218}
   - component: {fileID: 4235998560821040063}
   - component: {fileID: 2419444137769288776}
-  - component: {fileID: 1246356841233619788}
   - component: {fileID: 3173289098596571602}
-  - component: {fileID: 2118228082336291884}
+  - component: {fileID: 2834544307526987750}
   m_Layer: 0
   m_Name: CommisChef
   m_TagString: enemy
@@ -276,6 +275,7 @@ MonoBehaviour:
   bulletPos: {fileID: 7593313428198057832}
   checkPointPos: {fileID: 0}
   playerPos: {fileID: 0}
+  allowance: {fileID: 0}
 --- !u!61 &2419444137769288776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -321,25 +321,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 1.6}
   m_EdgeRadius: 0
---- !u!114 &1246356841233619788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5690863863575491725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ddc743a142a3f749815cdaee67579a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  startWaitTime: 0.1
-  moveSpot: {fileID: 0}
-  maxX: 27
-  minX: 11
-  minY: 2
-  maxY: 16
 --- !u!114 &3173289098596571602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +336,7 @@ MonoBehaviour:
   health: 10
   maxHealth: 10
   healthBar: {fileID: 0}
---- !u!114 &2118228082336291884
+--- !u!114 &2834544307526987750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -364,11 +345,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5690863863575491725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 186fc41c904ec564394437ee52a3b451, type: 3}
+  m_Script: {fileID: 11500000, guid: 5595037c1fc98f6468fff0552c04b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingDistance: 3
-  startFollowDistance: 7
+  speed: 0
+  startWaitTime: 0
+  moveSpots: []
+  randomSpot: 0
+  isShooting: 0
+  shootingDistance: 0
+  startFollowDistance: 0
 --- !u!1 &5945384152977109473
 GameObject:
   m_ObjectHideFlags: 0
