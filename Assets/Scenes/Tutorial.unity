@@ -228,6 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+    - {fileID: 2118228082336291884, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -444,6 +445,9 @@ MonoBehaviour:
   - {fileID: 633576658}
   - {fileID: 1446540145}
   randomSpot: 0
+  isShooting: 0
+  shootingDistance: 5
+  startFollowDistance: 7
 --- !u!1001 &708365043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3531,6 +3535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+    - {fileID: 2118228082336291884, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3568,6 +3573,9 @@ MonoBehaviour:
   - {fileID: 633576658}
   - {fileID: 1446540145}
   randomSpot: 0
+  isShooting: 0
+  shootingDistance: 3
+  startFollowDistance: 7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

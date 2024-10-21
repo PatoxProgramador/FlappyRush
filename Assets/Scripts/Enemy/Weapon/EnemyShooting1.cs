@@ -11,12 +11,12 @@ public class EnemyShooting1 : MonoBehaviour
     public GameObject checkPointPos;
     public GameObject playerPos;
 
-    [SerializeField] EnemyFollow allowance;
+    [SerializeField] EnemyMovementFixed allowance;
 
     void Start()
     {
 
-        allowance = GetComponent<EnemyFollow>();
+        allowance = GetComponent<EnemyMovementFixed>();
 
     }
 
