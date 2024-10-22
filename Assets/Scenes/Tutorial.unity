@@ -222,6 +222,22 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5264936805442955218, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e998d90356d7fb64986a7f50fdf08716, type: 3}
+    - target: {fileID: 5264936805442955218, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: m_Color.b
+      value: 0.39565918
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264936805442955218, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: m_Color.g
+      value: 0.21915273
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264936805442955218, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7169812
+      objectReference: {fileID: 0}
     - target: {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Name
       value: PrepChef
