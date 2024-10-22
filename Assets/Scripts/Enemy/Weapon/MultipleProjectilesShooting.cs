@@ -25,6 +25,7 @@ public class MultipleProjectilesShooting : MonoBehaviour
 
     void Update()
     {
+
         timer += Time.deltaTime;
 
         if (timer > 1f && allowance.isShooting)
@@ -36,19 +37,10 @@ public class MultipleProjectilesShooting : MonoBehaviour
 
     void Shoot()
     {
+
         int randomBullet = Random.Range(1, bullets.Length); // Random.Range should have a capital 'R' and an exclusive upper bound
 
-        for (int i = 0; i < bullets.Length; i++)
-        {
+        Instantiate(bullets[randomBullet], bulletPos.position, bulletPos.rotation);
 
-            if (randomBullet == i)
-            {
-
-                Instantiate(bullets[i], bulletPos.position, bulletPos.rotation);
-
-            }
-
-        }
-       
     }
 }
