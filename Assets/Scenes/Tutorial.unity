@@ -214,6 +214,14 @@ PrefabInstance:
       propertyPath: moveSpot
       value: 
       objectReference: {fileID: 1127456785}
+    - target: {fileID: 3173289098596571602, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: health
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173289098596571602, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: maxHealth
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Name
       value: PrepChef
@@ -228,11 +236,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -3543,16 +3551,20 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: isShooting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startWaitTime
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -3594,6 +3606,14 @@ PrefabInstance:
       propertyPath: moveSpots.Array.data[8]
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: maxHealth
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4235998560821040063, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: playerPos
       value: 

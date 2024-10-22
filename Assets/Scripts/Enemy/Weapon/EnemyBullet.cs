@@ -7,7 +7,10 @@ public class EnemyBullet : MonoBehaviour
     private GameObject player;
     private Rigidbody2D rb;
     public float force;
-    // Start is called before the first frame update
+
+    [Header("BulletDamages")]
+    public int damage;
+
     void Start()
     {
 

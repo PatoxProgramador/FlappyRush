@@ -20,10 +20,13 @@ public class Aiming : MonoBehaviour
     [Header("Health and Damage")]
     public PlayerHealth life;
 
+    EnemyBullet enemy;
+
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         this.FindBulletSpawnPoint();
+
     }
 
     void FixedUpdate()
@@ -89,7 +92,9 @@ public class Aiming : MonoBehaviour
             if (life != null)
             {
 
-                life.TakeDamage(1);
+                enemy = GameObject.FindGameObjectWithTag("EnemyBullet").GetComponent<EnemyBullet>();
+
+                life.TakeDamage(enemy.damage);
 
             }
 
