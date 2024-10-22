@@ -17,7 +17,7 @@ public class Aiming : MonoBehaviour
     [Range(0f, 20)]
     [SerializeField]
     private float aimSpeed = 10f;
-
+    [Header("Health and Damage")]
     public PlayerHealth life;
 
     void Start()
