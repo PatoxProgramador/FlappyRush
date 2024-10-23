@@ -22,10 +22,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-
         body = GetComponent<Rigidbody2D>();
+        EnablePlayerMovement();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
+    }
+
+    private void OnEnable() {
+        PlayerHealth.onPlayerDeath += DisablePlayerMovement;
+    }
+
+    private void OnDisable() {
+        PlayerHealth.onPlayerDeath -= DisablePlayerMovement;
     }
 
     void Update()
@@ -90,4 +98,16 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+
+    private void DisablePlayerMovement()
+    {
+        //animator.enable = false;
+        body.bodyType = RigidbodyType2D.Static;
+    }
+
+    private void EnablePlayerMovement()
+    {
+        //animator.enable = true;
+        body.bodyType = RigidbodyType2D.Dynamic;
+    }
 }

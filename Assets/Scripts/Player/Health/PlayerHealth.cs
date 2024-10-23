@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-
+    public static event Action onPlayerDeath;
     public float maxHealth;
     public float currentHealth;
 
@@ -33,6 +34,11 @@ public class PlayerHealth : MonoBehaviour
 
             currentHealth -= amount;
 
+        }
+
+        if (currentHealth == 0)
+        {
+            onPlayerDeath?.Invoke();
         }
 
     }

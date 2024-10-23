@@ -38,7 +38,7 @@ public class MultipleProjectilesShooting : MonoBehaviour
     void Shoot()
     {
 
-        int randomBullet = Random.Range(1, bullets.Length); // Random.Range should have a capital 'R' and an exclusive upper bound
+        int randomBullet = Random.Range(0, bullets.Length); // Random.Range should have a capital 'R' and an exclusive upper bound
 
         Instantiate(bullets[randomBullet], bulletPos.position, bulletPos.rotation);
 
