@@ -27,7 +27,7 @@ public class Bullet : MonoBehaviour
     private void FixedUpdate()
     {
 
-        _rigidbody.velocity = transform.up * _speed;
+        _rigidbody.linearVelocity = transform.up * _speed;
 
     }
 

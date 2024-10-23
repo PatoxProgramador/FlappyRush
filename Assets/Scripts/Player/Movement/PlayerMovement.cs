@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
                 {
 
                     jumpTimeCounter = jumpTime;
-                    body.velocity = Vector2.up * velocity;
+                    body.linearVelocity = Vector2.up * velocity;
                     StartCoroutine(changeJumpBoost());
 
                 }
@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
                     if (jumpTimeCounter > 0)
                     {
 
-                        body.velocity = Vector2.up * velocity;
+                        body.linearVelocity = Vector2.up * velocity;
 
                         StartCoroutine(changeJumpBoost());
 
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
                 // movement action
-                body.velocity = new Vector2(horizontal * speed, body.velocity.y);
+                body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
 
         }
 

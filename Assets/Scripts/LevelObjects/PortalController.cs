@@ -34,7 +34,7 @@ public class PortalController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         player.transform.position = destination.transform.position;
-        playerRb.velocity = Vector2.zero;
+        playerRb.linearVelocity = Vector2.zero;
         anim.Play("portal Out");
         yield return new WaitForSeconds(0.5f);
 
