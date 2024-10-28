@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7465395811426300941, guid: 032f94641e59e7b43aea20d12e1c9932, type: 3}
       propertyPath: m_PreviewTimeScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2609264721298096948, guid: 032f94641e59e7b43aea20d12e1c9932, type: 3}
       propertyPath: m_Name
@@ -131,5 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef396603219d7a459f8c86dbe1255d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
+  force: 15
   damage: 2
