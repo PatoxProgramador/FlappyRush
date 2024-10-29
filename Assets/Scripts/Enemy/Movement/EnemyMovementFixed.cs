@@ -24,6 +24,7 @@ public class EnemyMovementFixed : MonoBehaviour
     private Transform target;
 
     NavMeshAgent agent;
+    [SerializeField]private float agentAcceleration;
 
     void Start()
     {
@@ -31,6 +32,8 @@ public class EnemyMovementFixed : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        agentAcceleration = agent.acceleration;
 
         waitTime = startWaitTime;
 
@@ -60,6 +63,7 @@ public class EnemyMovementFixed : MonoBehaviour
 
             isShooting = false;
             //transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            agent.acceleration = agentAcceleration;
             agent.SetDestination(target.position);
 
         }
@@ -67,13 +71,14 @@ public class EnemyMovementFixed : MonoBehaviour
         {
 
             isShooting = true;
+            agent.acceleration = agentAcceleration;
 
         }
         else
         {
 
             isShooting = false;
-
+            agent.acceleration = 0;
             EnemyPatrol();
 
         }

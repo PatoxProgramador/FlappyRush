@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 3173289098596571602}
   - component: {fileID: -2915812060541237139}
   - component: {fileID: 7848032708006531744}
+  - component: {fileID: 9081753304929426151}
   m_Layer: 0
   m_Name: PrepChef
   m_TagString: enemy
@@ -362,6 +363,28 @@ MonoBehaviour:
   isShooting: 0
   shootingDistance: 0
   startFollowDistance: 0
+--- !u!195 &9081753304929426151
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690863863575491725}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.8
+  m_Speed: 4
+  m_Acceleration: 0
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.6
+  m_BaseOffset: 0.8
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &5945384152977109473
 GameObject:
   m_ObjectHideFlags: 0
