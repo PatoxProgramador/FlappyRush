@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyMovementFixed : MonoBehaviour
 {
@@ -22,8 +23,14 @@ public class EnemyMovementFixed : MonoBehaviour
 
     private Transform target;
 
+    NavMeshAgent agent;
+
     void Start()
     {
+
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
 
         waitTime = startWaitTime;
 
@@ -48,14 +55,15 @@ public class EnemyMovementFixed : MonoBehaviour
     {
 
         //decides whether enemyMovement or follow is interactable and at what certain distance
-        if (Vector2.Distance(transform.position, target.position) > shootingDistance && Vector2.Distance(transform.position, target.position) < startFollowDistance && CameraZoom.isZoom)
+        if (Vector2.Distance(transform.position, target.position) > shootingDistance && Vector2.Distance(transform.position, target.position) < startFollowDistance)
         {
 
             isShooting = false;
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            //transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            agent.SetDestination(target.position);
 
         }
-        else if (Vector2.Distance(transform.position, target.position) <= shootingDistance && CameraZoom.isZoom)
+        else if (Vector2.Distance(transform.position, target.position) <= shootingDistance)
         {
 
             isShooting = true;
