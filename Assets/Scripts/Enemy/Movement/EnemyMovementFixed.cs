@@ -14,6 +14,8 @@ public class EnemyMovementFixed : MonoBehaviour
     public Transform []moveSpots;
     public int randomSpot;
 
+    public float pointDistance;
+
     [Header("EnemyFollow")] 
     public bool isShooting;
 
@@ -83,7 +85,7 @@ public class EnemyMovementFixed : MonoBehaviour
         agent.SetDestination(moveSpots[randomSpot].position);
 
         //reach the position
-        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.5f)
+        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < pointDistance)
         {
             //time for enemy to move
             if (waitTime <= 0)
