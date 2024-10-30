@@ -475,11 +475,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -603,7 +603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -655,6 +655,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1367252657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &66687934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3858080211900997403, guid: 640238adecc7ec04f9fc440026a8779f, type: 3}
+  m_PrefabInstance: {fileID: 2059765262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &71059575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,11 +1042,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -1165,7 +1170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1532,11 +1537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -1588,7 +1593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -1677,11 +1682,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -1805,7 +1810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1928,11 +1933,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -1988,7 +1993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -2168,11 +2173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -2240,7 +2245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3155,11 +3160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -3227,7 +3232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3519,11 +3524,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -3647,7 +3652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4029,11 +4034,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -4145,7 +4150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -14177,11 +14182,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -14249,7 +14254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -14475,11 +14480,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -14547,7 +14552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -14638,11 +14643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -14766,7 +14771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -14966,11 +14971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -15094,7 +15099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15528,11 +15533,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -15600,7 +15605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15723,11 +15728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -15783,7 +15788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -16338,11 +16343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -16466,7 +16471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -16671,11 +16676,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -16799,7 +16804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -17554,11 +17559,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -17682,7 +17687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -18235,11 +18240,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -18307,7 +18312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -18716,11 +18721,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -18832,7 +18837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -19272,11 +19277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -19332,7 +19337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -19907,11 +19912,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -20035,7 +20040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -20389,6 +20394,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968646689}
   m_CullTransparentMesh: 1
+--- !u!1 &971138497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3941734419156110075, guid: 640238adecc7ec04f9fc440026a8779f, type: 3}
+  m_PrefabInstance: {fileID: 2059765262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &979861462
 GameObject:
   m_ObjectHideFlags: 0
@@ -21128,10 +21138,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 624010820}
-  - {fileID: 1141171737}
-  - {fileID: 2090241024}
   - {fileID: 2007081602}
   - {fileID: 1530283455}
+  - {fileID: 1462838372}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1069317747
@@ -23628,13 +23637,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141171736}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 16358945}
-  m_Father: {fileID: 1058450165}
+  m_Father: {fileID: 1462838372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1158091682
 GameObject:
@@ -24271,11 +24280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -24387,7 +24396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -25058,11 +25067,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -25118,7 +25127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -25444,11 +25453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -25516,7 +25525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -26115,6 +26124,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1462838371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1462838372}
+  m_Layer: 0
+  m_Name: LockedAccessAtTheMoment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1462838372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462838371}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1141171737}
+  - {fileID: 2090241024}
+  m_Father: {fileID: 1058450165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1483372407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 383187667839383063, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -26475,11 +26517,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -26547,7 +26589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -26670,11 +26712,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -26730,7 +26772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -26809,11 +26851,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -26881,7 +26923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -34669,11 +34711,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -34785,7 +34827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -35500,11 +35542,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -35572,7 +35614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -36149,11 +36191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -36277,7 +36319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -37056,11 +37098,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -37116,7 +37158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -37362,11 +37404,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -37478,7 +37520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -37837,11 +37879,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -37909,7 +37951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -38297,11 +38339,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -38425,7 +38467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -38769,6 +38811,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2458639361781371384, guid: 640238adecc7ec04f9fc440026a8779f, type: 3}
   m_PrefabInstance: {fileID: 2059765262}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1912333330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971138497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ddf178095ce984f800922c63ebacaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  padlock:
+  - {fileID: 8662626434217350123}
+  - {fileID: 650871286}
+  key: {fileID: 66687934}
 --- !u!1 &1928051075
 GameObject:
   m_ObjectHideFlags: 0
@@ -39006,11 +39064,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -39122,7 +39180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -39341,11 +39399,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -39413,7 +39471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -46004,11 +46062,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -46132,7 +46190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -46232,7 +46290,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3941734419156110075, guid: 640238adecc7ec04f9fc440026a8779f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1912333330}
   m_SourcePrefab: {fileID: 100100000, guid: 640238adecc7ec04f9fc440026a8779f, type: 3}
 --- !u!1 &2065928963
 GameObject:
@@ -46440,11 +46501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: shootingDistance
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: startFollowDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
@@ -46500,7 +46561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081753304929426151, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1246356841233619788, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
@@ -46610,13 +46671,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090241023}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1160586433}
-  m_Father: {fileID: 1058450165}
+  m_Father: {fileID: 1462838372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091348710
 GameObject:
@@ -47048,11 +47109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: shootingDistance
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: startFollowDistance
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
@@ -47120,7 +47181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6309191220455873672, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_Acceleration
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: m_AnchorMax.x
