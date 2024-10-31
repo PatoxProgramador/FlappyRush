@@ -9,10 +9,7 @@ public class MultipleProjectilesShooting : MonoBehaviour
 
     public Transform bulletPos; 
 
-    private float timer;
-
-    public GameObject checkPointPos; 
-    public GameObject playerPos; 
+    private float timer; 
 
     [SerializeField] EnemyMovementFixed allowance; 
 
