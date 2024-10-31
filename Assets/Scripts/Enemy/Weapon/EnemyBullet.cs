@@ -27,7 +27,7 @@ public class EnemyBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.tag != "enemy" && other.tag != "AimCheck" && other.tag != "Zoom" && other.tag != "EnemyCheck" && other.tag != "EnemyBullet")
+        if (other.tag != "enemy" && other.tag != "AimCheck" && other.tag != "Zoom" && other.tag != "EnemyCheck" && other.tag != "EnemyBullet"&& other.tag != "PlayerBullet")
         {
 
             Destroy(gameObject);
