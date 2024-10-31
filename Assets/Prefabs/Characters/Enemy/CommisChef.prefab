@@ -277,8 +277,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 274916002492899262, guid: d45121de65a697643b8a5c8546c8d2f3, type: 3}
   bulletPos: {fileID: 7593313428198057832}
-  checkPointPos: {fileID: 0}
-  playerPos: {fileID: 0}
   allowance: {fileID: 0}
 --- !u!61 &2419444137769288776
 BoxCollider2D:
@@ -338,8 +336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd021b2b16b7ee4ba4cdb6b6e82fb23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  maxHealth: 10
+  health: 4
+  maxHealth: 4
   healthBar: {fileID: 0}
 --- !u!114 &2834544307526987750
 MonoBehaviour:
@@ -353,13 +351,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5595037c1fc98f6468fff0552c04b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startWaitTime: 0
+  startWaitTime: 0.1
   moveSpots: []
   randomSpot: 0
   pointDistance: 1
+  arraySize: 0
+  patrolTag: []
   isShooting: 0
-  shootingDistance: 0
-  startFollowDistance: 0
+  shootingDistance: 6
+  startFollowDistance: 8
 --- !u!195 &6309191220455873672
 NavMeshAgent:
   m_ObjectHideFlags: 0

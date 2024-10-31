@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 19033732}
   m_Layer: 0
   m_Name: MoveSpot (15)
-  m_TagString: Untagged
+  m_TagString: LowerLeftTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,7 +377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -419,6 +423,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopLeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -613,7 +625,7 @@ GameObject:
   - component: {fileID: 26355108}
   m_Layer: 0
   m_Name: MoveSpot (8)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -716,7 +728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -758,6 +774,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -945,7 +969,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -987,6 +1015,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopRightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -1097,7 +1133,7 @@ GameObject:
   - component: {fileID: 57382831}
   m_Layer: 0
   m_Name: MoveSpot (16)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1380,7 +1416,7 @@ GameObject:
   - component: {fileID: 103272980}
   m_Layer: 0
   m_Name: MoveSpot (18)
-  m_TagString: Untagged
+  m_TagString: LowerRightTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1517,7 +1553,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -1559,6 +1599,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopRightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -1669,7 +1717,7 @@ GameObject:
   - component: {fileID: 112963352}
   m_Layer: 0
   m_Name: MoveSpot (20)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2012,7 +2060,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 9
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -2050,6 +2102,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: StartMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2152,7 +2208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -2194,6 +2254,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopRightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -2381,7 +2449,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -2419,6 +2491,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -2547,6 +2623,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag
+      value: untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: isShooting
       value: 0
       objectReference: {fileID: 0}
@@ -2564,20 +2644,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
       value: 
-      objectReference: {fileID: 1794432272}
+      objectReference: {fileID: 1418959284}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[1]'
       value: 
-      objectReference: {fileID: 1418959285}
+      objectReference: {fileID: 1794432271}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[2]'
       value: 
-      objectReference: {fileID: 777317850}
+      objectReference: {fileID: 777317849}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[3]'
       value: 
@@ -2606,6 +2690,18 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[2]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -2815,7 +2911,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -2853,6 +2953,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2961,7 +3065,7 @@ GameObject:
   - component: {fileID: 204119799}
   m_Layer: 0
   m_Name: MoveSpot (6)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3059,7 +3163,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -3097,6 +3205,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerLeftTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -3237,7 +3349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -3275,6 +3391,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerLeftTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -3333,7 +3453,7 @@ GameObject:
   - component: {fileID: 219505994}
   m_Layer: 0
   m_Name: MoveSpot (18)
-  m_TagString: Untagged
+  m_TagString: LowerLeftTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3463,7 +3583,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -3501,6 +3625,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3673,7 +3801,7 @@ GameObject:
   - component: {fileID: 236885100}
   m_Layer: 0
   m_Name: MoveSpot (22)
-  m_TagString: Untagged
+  m_TagString: LeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3709,7 +3837,7 @@ GameObject:
   - component: {fileID: 251117096}
   m_Layer: 0
   m_Name: MoveSpot (13)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4057,7 +4185,7 @@ GameObject:
   - component: {fileID: 274665412}
   m_Layer: 0
   m_Name: MoveSpot (18)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4111,8 +4239,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1794432272}
   - {fileID: 1418959285}
+  - {fileID: 1794432272}
   - {fileID: 777317850}
   m_Father: {fileID: 804492645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4194,7 +4322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -4232,6 +4364,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -4348,6 +4484,7 @@ MonoBehaviour:
   key:
   - {fileID: 1112491439}
   - {fileID: 764185173}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &299998958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4364,6 +4501,7 @@ MonoBehaviour:
   - {fileID: 1461146577}
   key:
   - {fileID: 716296377}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &299998959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4380,6 +4518,7 @@ MonoBehaviour:
   - {fileID: 319087375}
   key:
   - {fileID: 1717532101}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &299998960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4396,6 +4535,7 @@ MonoBehaviour:
   - {fileID: 1806427998}
   key:
   - {fileID: 2121415624}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &299998961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4417,6 +4557,7 @@ MonoBehaviour:
   key:
   - {fileID: 1708552165}
   - {fileID: 1802810726}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &299998962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4438,6 +4579,7 @@ MonoBehaviour:
   key:
   - {fileID: 845713769}
   - {fileID: 1008424131}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &299998963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4459,6 +4601,7 @@ MonoBehaviour:
   key:
   - {fileID: 999853541}
   - {fileID: 2018956694}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &299998964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4480,6 +4623,7 @@ MonoBehaviour:
   key:
   - {fileID: 550464995}
   - {fileID: 1020122303}
+  levelPuzzle: {fileID: 0}
 --- !u!1 &306739951
 GameObject:
   m_ObjectHideFlags: 0
@@ -4741,7 +4885,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -4779,6 +4927,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -4941,7 +5093,7 @@ GameObject:
   - component: {fileID: 346318773}
   m_Layer: 0
   m_Name: MoveSpot (9)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5007,7 +5159,7 @@ GameObject:
   - component: {fileID: 363728277}
   m_Layer: 0
   m_Name: MoveSpot (35)
-  m_TagString: Untagged
+  m_TagString: TopLeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5105,7 +5257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -5147,6 +5303,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: RightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -5356,7 +5520,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -5394,6 +5562,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -5433,7 +5605,7 @@ GameObject:
   - component: {fileID: 370489510}
   m_Layer: 0
   m_Name: MoveSpot (31)
-  m_TagString: Untagged
+  m_TagString: TopRightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5661,7 +5833,7 @@ GameObject:
   - component: {fileID: 417274193}
   m_Layer: 0
   m_Name: MoveSpot (20)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5791,7 +5963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -5833,6 +6009,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -5924,7 +6108,7 @@ GameObject:
   - component: {fileID: 440145031}
   m_Layer: 0
   m_Name: MoveSpot (18)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12269,7 +12453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -12307,6 +12495,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerLeftTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -12408,7 +12600,7 @@ GameObject:
   - component: {fileID: 474604102}
   m_Layer: 0
   m_Name: MoveSpot (27)
-  m_TagString: Untagged
+  m_TagString: RightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12439,7 +12631,7 @@ GameObject:
   - component: {fileID: 475064712}
   m_Layer: 0
   m_Name: MoveSpot (16)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12470,7 +12662,7 @@ GameObject:
   - component: {fileID: 479811071}
   m_Layer: 0
   m_Name: MoveSpot (20)
-  m_TagString: Untagged
+  m_TagString: LeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16122,7 +16314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -16160,6 +16356,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerLeftTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -16322,7 +16522,7 @@ GameObject:
   - component: {fileID: 495822880}
   m_Layer: 0
   m_Name: MoveSpot (17)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16420,7 +16620,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -16458,6 +16662,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -16566,6 +16774,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag
+      value: untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: isShooting
       value: 0
       objectReference: {fileID: 0}
@@ -16583,20 +16795,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
       value: 
-      objectReference: {fileID: 1794432272}
+      objectReference: {fileID: 1418959284}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[1]'
       value: 
-      objectReference: {fileID: 1418959285}
+      objectReference: {fileID: 1794432271}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[2]'
       value: 
-      objectReference: {fileID: 777317850}
+      objectReference: {fileID: 777317849}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[3]'
       value: 
@@ -16625,6 +16841,18 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[2]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -16807,7 +17035,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -16845,6 +17077,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerLeftTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -17084,7 +17320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -17126,6 +17366,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopLeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -17303,7 +17551,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -17341,6 +17593,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -17820,7 +18076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -17858,6 +18118,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -17902,7 +18166,7 @@ GameObject:
   - component: {fileID: 564880115}
   m_Layer: 0
   m_Name: MoveSpot (26)
-  m_TagString: Untagged
+  m_TagString: RightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18000,7 +18264,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -18038,6 +18306,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerLeftTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -18195,7 +18467,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -18233,6 +18509,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerRightTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -18369,7 +18649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -18407,6 +18691,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -18470,7 +18758,7 @@ GameObject:
   - component: {fileID: 589706901}
   m_Layer: 0
   m_Name: MoveSpot (28)
-  m_TagString: Untagged
+  m_TagString: TopRightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18501,7 +18789,7 @@ GameObject:
   - component: {fileID: 606933030}
   m_Layer: 0
   m_Name: MoveSpot (20)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18636,7 +18924,7 @@ GameObject:
   - component: {fileID: 612682924}
   m_Layer: 0
   m_Name: MoveSpot (15)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18745,7 +19033,7 @@ GameObject:
   - component: {fileID: 631378858}
   m_Layer: 0
   m_Name: MoveSpot (19)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18776,7 +19064,7 @@ GameObject:
   - component: {fileID: 633576658}
   m_Layer: 0
   m_Name: MoveSpot (11)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18978,7 +19266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -19016,6 +19308,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -19146,7 +19442,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -19188,6 +19488,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopLeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -19479,7 +19787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -19521,6 +19833,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -19745,7 +20065,7 @@ GameObject:
   - component: {fileID: 666598596}
   m_Layer: 0
   m_Name: MoveSpot (14)
-  m_TagString: Untagged
+  m_TagString: LowerLeftTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19850,7 +20170,7 @@ GameObject:
   - component: {fileID: 667959686}
   m_Layer: 0
   m_Name: MoveSpot (24)
-  m_TagString: Untagged
+  m_TagString: RightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19881,7 +20201,7 @@ GameObject:
   - component: {fileID: 683405638}
   m_Layer: 0
   m_Name: MoveSpot (17)
-  m_TagString: Untagged
+  m_TagString: LowerLeftTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19912,7 +20232,7 @@ GameObject:
   - component: {fileID: 687320821}
   m_Layer: 0
   m_Name: MoveSpot (18)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20371,7 +20691,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -20413,6 +20737,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: BottomSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -20742,7 +21074,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -20780,6 +21116,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -21022,7 +21362,7 @@ GameObject:
   - component: {fileID: 777317850}
   m_Layer: 0
   m_Name: MoveSpot (19)
-  m_TagString: Untagged
+  m_TagString: CenterRightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21120,7 +21460,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -21162,6 +21506,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: RightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -21453,7 +21805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -21491,6 +21847,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -21648,7 +22008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -21690,6 +22054,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: BottomSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -21994,7 +22366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -22032,6 +22408,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -22100,7 +22480,7 @@ GameObject:
   - component: {fileID: 836865090}
   m_Layer: 0
   m_Name: MoveSpot (13)
-  m_TagString: Untagged
+  m_TagString: BottomSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22349,7 +22729,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -22391,6 +22775,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: RightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -22526,7 +22918,7 @@ GameObject:
   - component: {fileID: 876862749}
   m_Layer: 0
   m_Name: MoveSpot (20)
-  m_TagString: Untagged
+  m_TagString: LowerRightTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22775,7 +23167,7 @@ GameObject:
   - component: {fileID: 900156277}
   m_Layer: 0
   m_Name: MoveSpot (15)
-  m_TagString: Untagged
+  m_TagString: BottomSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22873,7 +23265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -22911,6 +23307,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -23073,7 +23473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -23111,6 +23515,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerRightTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -23145,7 +23553,7 @@ GameObject:
   - component: {fileID: 902841150}
   m_Layer: 0
   m_Name: MoveSpot (25)
-  m_TagString: Untagged
+  m_TagString: RightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23280,7 +23688,7 @@ GameObject:
   - component: {fileID: 912388914}
   m_Layer: 0
   m_Name: MoveSpot (15)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23713,20 +24121,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
       value: 
-      objectReference: {fileID: 1794432272}
+      objectReference: {fileID: 1418959284}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[1]'
       value: 
-      objectReference: {fileID: 1418959285}
+      objectReference: {fileID: 1794432271}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[2]'
       value: 
-      objectReference: {fileID: 777317850}
+      objectReference: {fileID: 777317849}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[3]'
       value: 
@@ -23755,6 +24167,18 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[2]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -23865,7 +24289,7 @@ GameObject:
   - component: {fileID: 942332457}
   m_Layer: 0
   m_Name: MoveSpot (16)
-  m_TagString: Untagged
+  m_TagString: LowerLeftTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23896,7 +24320,7 @@ GameObject:
   - component: {fileID: 948835413}
   m_Layer: 0
   m_Name: MoveSpot (7)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23932,7 +24356,7 @@ GameObject:
   - component: {fileID: 962651967}
   m_Layer: 0
   m_Name: MoveSpot (21)
-  m_TagString: Untagged
+  m_TagString: LeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24312,7 +24736,7 @@ GameObject:
   - component: {fileID: 990167297}
   m_Layer: 0
   m_Name: MoveSpot (5)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24506,7 +24930,7 @@ GameObject:
   - component: {fileID: 1007960843}
   m_Layer: 0
   m_Name: MoveSpot (16)
-  m_TagString: Untagged
+  m_TagString: BottomSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24615,7 +25039,7 @@ GameObject:
   - component: {fileID: 1010814045}
   m_Layer: 0
   m_Name: MoveSpot (13)
-  m_TagString: Untagged
+  m_TagString: LowerRightTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24685,7 +25109,7 @@ GameObject:
   - component: {fileID: 1022388794}
   m_Layer: 0
   m_Name: MoveSpot (13)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24716,7 +25140,7 @@ GameObject:
   - component: {fileID: 1027752735}
   m_Layer: 0
   m_Name: MoveSpot (13)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24752,7 +25176,7 @@ GameObject:
   - component: {fileID: 1042342445}
   m_Layer: 0
   m_Name: MoveSpot (19)
-  m_TagString: Untagged
+  m_TagString: LowerLeftTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24867,7 +25291,7 @@ GameObject:
   - component: {fileID: 1051288267}
   m_Layer: 0
   m_Name: MoveSpot (13)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26697,7 +27121,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -26739,6 +27167,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: RightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -26910,6 +27346,7 @@ MonoBehaviour:
   - {fileID: 1845018909}
   key:
   - {fileID: 1160476959}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &1096471138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26934,6 +27371,7 @@ MonoBehaviour:
   key:
   - {fileID: 1256582151}
   - {fileID: 164831546}
+  levelPuzzle: {fileID: 0}
 --- !u!114 &1096471139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26957,6 +27395,7 @@ MonoBehaviour:
   key:
   - {fileID: 1407620897}
   - {fileID: 174286475}
+  levelPuzzle: {fileID: 0}
 --- !u!1 &1096720921
 GameObject:
   m_ObjectHideFlags: 0
@@ -26968,7 +27407,7 @@ GameObject:
   - component: {fileID: 1096720922}
   m_Layer: 0
   m_Name: MoveSpot (19)
-  m_TagString: Untagged
+  m_TagString: LowerRightTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27177,7 +27616,7 @@ GameObject:
   - component: {fileID: 1111149233}
   m_Layer: 0
   m_Name: MoveSpot (29)
-  m_TagString: Untagged
+  m_TagString: TopRightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27452,7 +27891,7 @@ GameObject:
   - component: {fileID: 1127456785}
   m_Layer: 0
   m_Name: MoveSpot (4)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27847,7 +28286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -27889,6 +28332,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: BottomSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -28009,7 +28460,7 @@ GameObject:
   - component: {fileID: 1158091683}
   m_Layer: 0
   m_Name: MoveSpot (14)
-  m_TagString: Untagged
+  m_TagString: LowerRightTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28267,7 +28718,7 @@ GameObject:
   - component: {fileID: 1180141881}
   m_Layer: 0
   m_Name: MoveSpot (16)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28506,7 +28957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -28544,6 +28999,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerRightTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -28627,7 +29086,7 @@ GameObject:
   - component: {fileID: 1212192876}
   m_Layer: 0
   m_Name: MoveSpot (19)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28668,7 +29127,7 @@ GameObject:
   - component: {fileID: 1240648712}
   m_Layer: 0
   m_Name: MoveSpot (16)
-  m_TagString: Untagged
+  m_TagString: LowerRightTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28835,7 +29294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -28877,6 +29340,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopRightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -28963,7 +29434,7 @@ GameObject:
   - component: {fileID: 1274012420}
   m_Layer: 0
   m_Name: MoveSpot (15)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28994,7 +29465,7 @@ GameObject:
   - component: {fileID: 1275283808}
   m_Layer: 0
   m_Name: MoveSpot (14)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29030,7 +29501,7 @@ GameObject:
   - component: {fileID: 1288568560}
   m_Layer: 0
   m_Name: MoveSpot (14)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29066,7 +29537,7 @@ GameObject:
   - component: {fileID: 1292930580}
   m_Layer: 0
   m_Name: MoveSpot (34)
-  m_TagString: Untagged
+  m_TagString: TopLeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29097,7 +29568,7 @@ GameObject:
   - component: {fileID: 1298800164}
   m_Layer: 0
   m_Name: MoveSpot (33)
-  m_TagString: Untagged
+  m_TagString: TopLeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29333,7 +29804,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -29371,6 +29846,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerRightTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -29415,7 +29894,7 @@ GameObject:
   - component: {fileID: 1350402217}
   m_Layer: 0
   m_Name: MoveSpot (13)
-  m_TagString: Untagged
+  m_TagString: LowerLeftTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29489,7 +29968,7 @@ GameObject:
   - component: {fileID: 1352640935}
   m_Layer: 0
   m_Name: MoveSpot (15)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29634,7 +30113,7 @@ GameObject:
   - component: {fileID: 1366110132}
   m_Layer: 0
   m_Name: MoveSpot (16)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29808,7 +30287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -29846,6 +30329,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -30091,6 +30578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1378785849}
+  - component: {fileID: 1378785850}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -30116,6 +30604,19 @@ Transform:
   - {fileID: 1096471136}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1378785850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378785848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9b562eab998cb42aed7e48e2701e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stages: {fileID: 66687934}
 --- !u!1001 &1389497726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30194,7 +30695,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -30232,6 +30737,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -30357,7 +30866,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -30395,6 +30908,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerLeftTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -30502,7 +31019,7 @@ GameObject:
   - component: {fileID: 1415334902}
   m_Layer: 0
   m_Name: MoveSpot (20)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30533,7 +31050,7 @@ GameObject:
   - component: {fileID: 1418959285}
   m_Layer: 0
   m_Name: MoveSpot (18)
-  m_TagString: Untagged
+  m_TagString: CenterLeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30907,7 +31424,7 @@ GameObject:
   - component: {fileID: 1446540145}
   m_Layer: 0
   m_Name: MoveSpot (12)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31088,7 +31605,7 @@ GameObject:
   - component: {fileID: 1483954337}
   m_Layer: 0
   m_Name: MoveSpot (17)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31440,7 +31957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -31478,6 +31999,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -31635,7 +32160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -31673,6 +32202,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerRightTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -31774,7 +32307,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -31812,6 +32349,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -32670,7 +33211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -32712,6 +33257,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopLeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -32936,7 +33489,7 @@ GameObject:
   - component: {fileID: 1585079429}
   m_Layer: 0
   m_Name: MoveSpot (14)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39731,7 +40284,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -39769,6 +40326,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -40040,7 +40601,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -40082,6 +40647,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopLeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -40208,7 +40781,7 @@ GameObject:
   - component: {fileID: 1606175843}
   m_Layer: 0
   m_Name: MoveSpot (30)
-  m_TagString: Untagged
+  m_TagString: TopRightSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40239,7 +40812,7 @@ GameObject:
   - component: {fileID: 1610444207}
   m_Layer: 0
   m_Name: MoveSpot (10)
-  m_TagString: Untagged
+  m_TagString: StartMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40337,7 +40910,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -40375,6 +40952,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -40438,7 +41019,7 @@ GameObject:
   - component: {fileID: 1616588305}
   m_Layer: 0
   m_Name: MoveSpot (18)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41049,7 +41630,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -41087,6 +41672,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -41610,7 +42199,7 @@ GameObject:
   - component: {fileID: 1668503113}
   m_Layer: 0
   m_Name: MoveSpot (17)
-  m_TagString: Untagged
+  m_TagString: LowerRightTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41708,7 +42297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -41750,6 +42343,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -41964,7 +42565,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -42006,6 +42611,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: BottomSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -42302,7 +42915,7 @@ GameObject:
   - component: {fileID: 1714578897}
   m_Layer: 0
   m_Name: MoveSpot (19)
-  m_TagString: Untagged
+  m_TagString: UpperRightTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42532,7 +43145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -42570,6 +43187,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -43019,7 +43640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -43057,6 +43682,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -43158,7 +43787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -43196,6 +43829,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -43259,7 +43896,7 @@ GameObject:
   - component: {fileID: 1757349846}
   m_Layer: 0
   m_Name: MoveSpot (20)
-  m_TagString: Untagged
+  m_TagString: LowerLeftTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43493,7 +44130,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -43535,6 +44176,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: BottomSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -43870,7 +44519,7 @@ GameObject:
   - component: {fileID: 1770857996}
   m_Layer: 0
   m_Name: MoveSpot (14)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43968,7 +44617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -44006,6 +44659,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -44178,7 +44835,7 @@ GameObject:
   - component: {fileID: 1787619111}
   m_Layer: 0
   m_Name: MoveSpot (19)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44209,7 +44866,7 @@ GameObject:
   - component: {fileID: 1794432272}
   m_Layer: 0
   m_Name: MoveSpot (17)
-  m_TagString: Untagged
+  m_TagString: CenterBottomSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44443,7 +45100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -44485,6 +45146,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: BottomSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -44771,7 +45440,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -44809,6 +45482,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -44872,7 +45549,7 @@ GameObject:
   - component: {fileID: 1885497123}
   m_Layer: 0
   m_Name: MoveSpot (17)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleUpperHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45076,7 +45753,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -45114,6 +45795,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -45278,6 +45963,7 @@ MonoBehaviour:
   key:
   - {fileID: 66687934}
   - {fileID: 2136607808}
+  levelPuzzle: {fileID: 0}
 --- !u!1 &1928051075
 GameObject:
   m_ObjectHideFlags: 0
@@ -45460,7 +46146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -45502,6 +46192,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: TopRightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -45622,7 +46320,7 @@ GameObject:
   - component: {fileID: 1932675579}
   m_Layer: 0
   m_Name: MoveSpot (32)
-  m_TagString: Untagged
+  m_TagString: TopLeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45752,7 +46450,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -45794,6 +46496,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: BottomSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterBottomSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -45984,7 +46694,7 @@ GameObject:
   - component: {fileID: 1960363249}
   m_Layer: 0
   m_Name: MoveSpot (23)
-  m_TagString: Untagged
+  m_TagString: LeftSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46087,7 +46797,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -46125,6 +46839,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerLeftTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -52622,7 +53340,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -52660,6 +53382,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleLowerHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -52829,7 +53555,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -52867,6 +53597,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -53101,7 +53835,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -53143,6 +53881,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: RightSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterRightSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -53404,7 +54150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -53446,6 +54196,14 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[9]'
       value: 
       objectReference: {fileID: 236885100}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LeftSquareMoveSpot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[1]'
+      value: CenterLeftSquareMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[10]'
       value: 
@@ -53769,7 +54527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -53807,6 +54569,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperRightTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -53981,7 +54747,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -54019,6 +54789,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 7848032708006531744, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: LowerRightTriangleMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -54063,7 +54837,7 @@ GameObject:
   - component: {fileID: 2082826955}
   m_Layer: 0
   m_Name: MoveSpot (17)
-  m_TagString: Untagged
+  m_TagString: UpperLeftTriangleLowerHalf
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54240,7 +55014,7 @@ GameObject:
   - component: {fileID: 2100374094}
   m_Layer: 0
   m_Name: MoveSpot (14)
-  m_TagString: Untagged
+  m_TagString: BottomSquareMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54385,7 +55159,7 @@ GameObject:
   - component: {fileID: 2106122571}
   m_Layer: 0
   m_Name: MoveSpot (15)
-  m_TagString: Untagged
+  m_TagString: LowerRightTriangleMoveSpot
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54483,7 +55257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -54521,6 +55299,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: UpperLeftTriangleUpperHalf
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4
@@ -54734,7 +55516,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: moveSpots.Array.size
-      value: 9
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: 'moveSpots.Array.data[0]'
@@ -54772,6 +55558,10 @@ PrefabInstance:
       propertyPath: 'moveSpots.Array.data[8]'
       value: 
       objectReference: {fileID: 1446540145}
+    - target: {fileID: 2834544307526987750, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: StartMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 3173289098596571602, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
       propertyPath: health
       value: 4

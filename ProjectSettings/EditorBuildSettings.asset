@@ -12,3 +12,4 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 4dad5f70ea71fa14c89309972ebf3635
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

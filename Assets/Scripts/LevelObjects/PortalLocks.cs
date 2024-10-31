@@ -8,6 +8,8 @@ public class PortalLocks : MonoBehaviour
 
     public GameObject[] key;//Revealing next junk
 
+    public LevelManager levelPuzzle;
+
     void Start()
     {
 

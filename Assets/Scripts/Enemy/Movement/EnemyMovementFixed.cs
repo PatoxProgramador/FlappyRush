@@ -11,10 +11,16 @@ public class EnemyMovementFixed : MonoBehaviour
     public float startWaitTime;
     [Header("Patrol")]
     //fixed transform position path
-    public Transform []moveSpots;
+    //public GameObject []moveSpots;
+    public List<GameObject> moveSpots = new List<GameObject>(); 
+
     public int randomSpot;
 
     public float pointDistance;
+
+    [SerializeField]int arraySize;
+
+    public string[] patrolTag;
 
     [Header("EnemyFollow")] 
     public bool isShooting;
@@ -34,8 +40,11 @@ public class EnemyMovementFixed : MonoBehaviour
 
         waitTime = startWaitTime;
 
+        arraySize = 0;
+        TagControl();
+
         //get location
-        randomSpot = Random.Range(0,moveSpots.Length);
+        randomSpot = Random.Range(0,arraySize);
 
         //EnemyFollow
         //get player location
@@ -82,16 +91,16 @@ public class EnemyMovementFixed : MonoBehaviour
     void EnemyPatrol()
     {
 
-        agent.SetDestination(moveSpots[randomSpot].position);
+        agent.SetDestination(moveSpots[randomSpot].transform.position);
 
         //reach the position
-        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < pointDistance)
+        if (Vector2.Distance(transform.position, moveSpots[randomSpot].transform.position) < pointDistance)
         {
             //time for enemy to move
             if (waitTime <= 0)
             {
                 //new target
-                randomSpot = Random.Range(0, moveSpots.Length);
+                randomSpot = Random.Range(0, arraySize);
 
                 waitTime = startWaitTime;
 
@@ -100,6 +109,27 @@ public class EnemyMovementFixed : MonoBehaviour
             {
 
                 waitTime -= Time.deltaTime;
+
+            }
+
+        }
+
+    }
+    //finds all patrol spot that has to walk over
+    void TagControl()
+    {
+
+        for (int i = 0; i < patrolTag.Length; i++)
+        {
+
+            GameObject[] movingSpots = GameObject.FindGameObjectsWithTag(patrolTag[i]);
+
+            for (int j = 0; j < movingSpots.Length; j++)
+            {
+
+                moveSpots.Add(movingSpots[j]);
+
+                arraySize++;
 
             }
 

@@ -321,8 +321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd021b2b16b7ee4ba4cdb6b6e82fb23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  maxHealth: 10
+  health: 6
+  maxHealth: 6
   healthBar: {fileID: 0}
 --- !u!114 &-2915812060541237139
 MonoBehaviour:
@@ -341,8 +341,6 @@ MonoBehaviour:
   - {fileID: 274916002492899262, guid: 06852007fe729cb44b6c440544182118, type: 3}
   - {fileID: 274916002492899262, guid: d53e9bcf77170f74899e56457e7c4027, type: 3}
   bulletPos: {fileID: 7593313428198057832}
-  checkPointPos: {fileID: 0}
-  playerPos: {fileID: 0}
   allowance: {fileID: 0}
 --- !u!114 &7848032708006531744
 MonoBehaviour:
@@ -356,13 +354,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5595037c1fc98f6468fff0552c04b60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startWaitTime: 0
+  startWaitTime: 0.1
   moveSpots: []
   randomSpot: 0
   pointDistance: 1
+  arraySize: 0
+  patrolTag: []
   isShooting: 0
-  shootingDistance: 0
-  startFollowDistance: 0
+  shootingDistance: 8
+  startFollowDistance: 10
 --- !u!195 &9081753304929426151
 NavMeshAgent:
   m_ObjectHideFlags: 0
