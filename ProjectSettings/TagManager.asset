@@ -13,7 +13,6 @@ TagManager:
   - PlayerBullet
   - EnemyBullet
   - Zoom
-  - enemy1
   - LeftSquareMoveSpot
   - CenterLeftSquareMoveSpot
   - CenterRightSquareMoveSpot
@@ -40,6 +39,7 @@ TagManager:
   - EnemyUpperRightTriangleLowerHalf
   - EnemyUpperLeftTriangleUpperHalf
   - EnemyUpperRightTriangleUpperHalf
+  - enemy1
   layers:
   - Default
   - TransparentFX

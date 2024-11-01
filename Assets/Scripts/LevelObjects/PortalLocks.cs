@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Drawing;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,10 +10,16 @@ public class PortalLocks : MonoBehaviour
 
     public GameObject[] key;//Revealing next junk
 
-    public LevelManager levelPuzzle;
+    public bool goAhead;
+
+    public PortalLocks allow;
+    public bool look;
+    public AutomaticEnemySpawner spawn;
 
     void Start()
     {
+
+        goAhead = false;
 
         foreach (GameObject keychain in key)
         {
@@ -19,41 +27,79 @@ public class PortalLocks : MonoBehaviour
             keychain.SetActive(false);
 
         }
-            
+
+        StartCoroutine(Waiter());
+
     }
 
     void Update()
     {
 
-        OpenSesame(padlock,key);    
-        
-    }
+        look = allow.goAhead;
 
-    public void OpenSesame(GameObject[] collectables, GameObject[] prize)
-    {
-        
         int j = 0;
 
-        for (int i = 0; i < collectables.Length; i++)
+        for (int i = 0; i < padlock.Length; i++)
         {
             // checks if everything is null
-            if (collectables[i] == null)
+            if (padlock[i] == null)
             {
 
                 j++;
 
             }
-            if (j == collectables.Length)
+            if (j == padlock.Length)
             {
                 //only if every element is null next step is revealed
-                foreach (GameObject lottery in prize)
+                foreach (GameObject lottery in key)
                 {
 
                     lottery.SetActive(true);
 
+                    goAhead = true;
+
                 }
 
             }//else it restarts the loop again
+
+        }
+
+    }
+
+    IEnumerator Waiter()
+    {
+
+        yield return new WaitForSeconds(0.1f);
+
+        if (look)
+        {
+
+            if(spawn != null)
+            {
+
+                padlock = new GameObject[spawn.nextWave.Length];
+
+                if (spawn.hey)
+                {
+
+                    for (int i = 0; i < spawn.nextWave.Length; i++)
+                    {
+
+                        padlock[i] = spawn.nextWave[i];
+
+                    }
+
+                }
+
+            } 
+
+            StopCoroutine(Waiter());
+
+        }
+        else
+        {
+
+            StartCoroutine(Waiter());
 
         }
 

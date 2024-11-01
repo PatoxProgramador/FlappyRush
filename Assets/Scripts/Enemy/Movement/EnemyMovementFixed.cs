@@ -240,6 +240,8 @@ public class EnemyMovementFixed : MonoBehaviour
 
         }
 
+        gameObject.tag = "enemy";
+
     }
 
 }
