@@ -40,6 +40,8 @@ public class EnemyMovementFixed : MonoBehaviour
 
         waitTime = startWaitTime;
 
+        AutomaticSpawnerName();
+
         arraySize = 0;
         TagControl();
 
@@ -56,7 +58,7 @@ public class EnemyMovementFixed : MonoBehaviour
     void Update()
     {
  
-            EnemyFollow();
+        EnemyFollow();
 
     }
 
@@ -132,6 +134,109 @@ public class EnemyMovementFixed : MonoBehaviour
                 arraySize++;
 
             }
+
+        }
+
+    }
+
+    void AutomaticSpawnerName()
+    {
+
+        switch (gameObject.tag)
+        {
+
+            case "EnemySquareLeft":
+
+                patrolTag = new string[2];
+
+                patrolTag[0] = "LeftSquareMoveSpot";
+                patrolTag[1] = "CenterLeftSquareMoveSpot";
+
+            break;
+
+            case "EnemySquareRight":
+
+                patrolTag = new string[2];
+
+                patrolTag[0] = "RightSquareMoveSpot";
+                patrolTag[1] = "CenterRightSquareMoveSpot";
+
+            break;
+
+            case "EnemySquareBottom":
+
+                patrolTag = new string[2];
+
+                patrolTag[0] = "BottomSquareMoveSpot";
+                patrolTag[1] = "CenterBottomSquareMoveSpot";
+
+            break;
+
+            case "EnemySquareTopLeft":
+
+                patrolTag = new string[2];
+
+                patrolTag[0] = "TopLeftSquareMoveSpot";
+                patrolTag[1] = "CenterLeftSquareMoveSpot";
+
+            break;
+
+            case "EnemySquareTopRight":
+
+                patrolTag = new string[2];
+
+                patrolTag[0] = "TopRightSquareMoveSpot";
+                patrolTag[1] = "CenterRightSquareMoveSpot";
+
+            break;
+
+            case "EnemyLowerLeftTriangle":
+
+                patrolTag = new string[1];
+
+                patrolTag[0] = "LowerLeftTriangleMoveSpot";
+
+            break;
+
+            case "EnemyLowerRightTriangle":
+
+                patrolTag = new string[1];
+
+                patrolTag[0] = "LowerRightTriangleMoveSpot";
+
+            break;
+
+            case "EnemyUpperLeftTriangleLowerHalf":
+
+                patrolTag = new string[1];
+
+                patrolTag[0] = "UpperLeftTriangleLowerHalf";
+
+            break;
+
+            case "EnemyUpperRightTriangleLowerHalf":
+
+                patrolTag = new string[1];
+
+                patrolTag[0] = "UpperRightTriangleLowerHalf";
+
+            break;
+
+            case "EnemyUpperLeftTriangleUpperHalf":
+
+                patrolTag = new string[1];
+
+                patrolTag[0] = "UpperLeftTriangleUpperHalf";
+
+            break;
+
+            case "EnemyUpperRightTriangleUpperHalf":
+
+                patrolTag = new string[1];
+
+                patrolTag[0] = "UpperRightTriangleUpperHalf";
+
+            break;
 
         }
 

@@ -29,6 +29,17 @@ TagManager:
   - UpperLeftTriangleUpperHalf
   - UpperRightTriangleUpperHalf
   - TopRightSquareMoveSpot
+  - EnemySquareLeft
+  - EnemySquareRight
+  - EnemySquareBottom
+  - EnemySquareTopLeft
+  - EnemySquareTopRight
+  - EnemyLowerLeftTriangle
+  - EnemyLowerRightTriangle
+  - EnemyUpperLeftTriangleLowerHalf
+  - EnemyUpperRightTriangleLowerHalf
+  - EnemyUpperLeftTriangleUpperHalf
+  - EnemyUpperRightTriangleUpperHalf
   layers:
   - Default
   - TransparentFX
