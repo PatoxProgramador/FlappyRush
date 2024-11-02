@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     {
 
         currentHealth = maxHealth;
+        //transform the current health in a angle of 90 degrees
         radiusHealth = (currentHealth / maxHealth) * -90;
 
     }

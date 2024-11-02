@@ -10,11 +10,16 @@ public class PortalLocks : MonoBehaviour
 
     public GameObject[] key;//Revealing next junk
 
+    [Header("previous portal locks that unlocked this one")]
+    public PortalLocks allow;
+    
+    [Header("spawner of enemies that unlocked this")]
+    public AutomaticEnemySpawner spawn;
+
+    [Header("debug")]
     public bool goAhead;
 
-    public PortalLocks allow;
     public bool look;
-    public AutomaticEnemySpawner spawn;
 
     void Start()
     {
@@ -70,10 +75,10 @@ public class PortalLocks : MonoBehaviour
     {
 
         yield return new WaitForSeconds(0.1f);
-
+        //check if the last portal lock was completed
         if (look)
         {
-
+            //if there ar enemies spawned that got to be killed
             if(spawn != null)
             { 
 

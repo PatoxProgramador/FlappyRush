@@ -20,7 +20,7 @@ public class EnemyHealthBar : MonoBehaviour
 
     public void UpdateHealthBar(float current, float max)
     {
-
+        //values shown in health bar
         slider.maxValue = max;
         slider.value = current;
 

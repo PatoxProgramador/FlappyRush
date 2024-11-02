@@ -13,15 +13,15 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
-
+        //sets health to max
         health = maxHealth;
         
         healthBar = GetComponentInChildren<EnemyHealthBar>();
+        //updates the current health in health bar
         healthBar.UpdateHealthBar(health, maxHealth);
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -41,6 +41,7 @@ public class EnemyHealth : MonoBehaviour
         {
 
             health -= 1f;
+            //updates the damage in health bar
             healthBar.UpdateHealthBar(health,maxHealth);
 
         }

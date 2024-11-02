@@ -41,7 +41,7 @@ public class EnemyMovementFixed : MonoBehaviour
         waitTime = startWaitTime;
 
         AutomaticSpawnerName();
-
+        //debug purpose
         arraySize = 0;
         TagControl();
 
@@ -138,7 +138,7 @@ public class EnemyMovementFixed : MonoBehaviour
         }
 
     }
-
+    //If enemy spawned with certain tag its assineg certain move spots with those tags
     void AutomaticSpawnerName()
     {
 
@@ -239,7 +239,7 @@ public class EnemyMovementFixed : MonoBehaviour
             break;
 
         }
-
+        // tag changes to enemy
         gameObject.tag = "enemy";
 
     }

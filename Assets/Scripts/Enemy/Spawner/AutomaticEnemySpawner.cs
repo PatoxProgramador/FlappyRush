@@ -4,23 +4,25 @@ using UnityEngine.SceneManagement;
 
 public class AutomaticEnemySpawner : MonoBehaviour
 {
-
+    [Header("SpawnLocation")]
     public GameObject[] patrolPoints;
-
-    public GameObject[] nextWave;
-
-    public GameObject[] enemyTypes;
-    public int[] enemyQuantity;
+   
+    public GameObject ParentObject; //gameobject enemies will spawn inside
 
     int randomSpot;
+    [Header("dont touch")]
+    public GameObject[] nextWave;
 
+    [Header("Enemy Spawn variety and numbers")]
+    public GameObject[] enemyTypes;
+    public int[] enemyQuantity;
+    [Header("assign enemy tag to find its determined movepoints path")]
     public string enemySection;
+    [Header("Portal lock that unlocked this gameObject")]
+    public PortalLocks unlock;//used to enabled this script actions
 
-    public PortalLocks unlock;
-
-    public GameObject ParentObject;
-
-    public bool hey;
+    [Header("debug")]
+    public bool hey;//tells whether the next portal locks should start acting
 
     public int count;
 
@@ -44,7 +46,7 @@ public class AutomaticEnemySpawner : MonoBehaviour
         }
 
     }
-
+    //finds out the total array size
     void LengthCreator()
     {
 
@@ -66,10 +68,10 @@ public class AutomaticEnemySpawner : MonoBehaviour
         LengthCreator();
 
         int flag = 0;
-
+        //type of enemy that will be spawned
         for (int j = 0; j < enemyTypes.Length; j++)
         {
-
+            //adjust where the pointer of the array should be, so the next type of enemies dont replace the current ones
             if (j > 0)
             {
 
@@ -82,7 +84,7 @@ public class AutomaticEnemySpawner : MonoBehaviour
                 flag = 0;
 
             }
-
+            //quantity of enemy spawned of that type
             for (int i = 0; i < enemyQuantity[j]; i++)
             {
 

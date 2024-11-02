@@ -11,6 +11,8 @@ public class EnemyBullet : MonoBehaviour
     [Header("BulletDamages")]
     public int damage;
 
+    string[] tags = {"enemy","AimCheck","Zoom","EnemyCheck","EnemyBullet","PlayerBullet"};
+
     void Start()
     {
 
@@ -27,10 +29,33 @@ public class EnemyBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.tag != "enemy" && other.tag != "AimCheck" && other.tag != "Zoom" && other.tag != "EnemyCheck" && other.tag != "EnemyBullet"&& other.tag != "PlayerBullet")
+        int count = 0;
+        int replica = 0;
+
+        for (int i = 0; i < tags.Length; i++)
         {
 
-            Destroy(gameObject);
+            //keeps track of each tag 'flag'
+            count++;
+            //check for specific tag
+            if (other.tag != tags[i])
+            {
+                //check if every tag are check out
+                if (i < tags.Length - 1 && replica == count - 1)
+                {
+                    //does taht until it in the end of array
+                    replica = count;
+                    continue;
+
+                }
+                else if (i >= tags.Length - 1 && replica == count - 1)
+                {
+                    //finally does its job
+                    Destroy(gameObject);
+
+                }
+
+            }
 
         }
 
