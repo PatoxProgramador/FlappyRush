@@ -65,6 +65,8 @@ public class AutomaticEnemySpawner : MonoBehaviour
 
         LengthCreator();
 
+        int flag = 0;
+
         for (int j = 0; j < enemyTypes.Length; j++)
         {
 
@@ -80,19 +82,23 @@ public class AutomaticEnemySpawner : MonoBehaviour
                 if (j > 0)
                 {
 
-                    nextWave[i+enemyQuantity[j-1]] = a;
+                    flag += enemyQuantity[j-1];
 
                 }
                 else
                 {
 
-                    nextWave[i] = a;
+                    flag = 0;
 
-                } 
+                }
+
+                nextWave[i + flag] = a;
 
                 a.transform.parent = ParentObject.transform;
 
-            }
+                flag += enemyQuantity[j];
+
+            } 
 
         }
 
