@@ -14989,12 +14989,11 @@ MonoBehaviour:
   - {fileID: 902841149}
   - {fileID: 564880114}
   - {fileID: 474604101}
-  nextWave:
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 0400000001000000
   enemySection: EnemySquareRight
   unlock: {fileID: 299998962}
   ParentObject: {fileID: 716296377}
@@ -15302,12 +15301,11 @@ MonoBehaviour:
   - {fileID: 1298800163}
   - {fileID: 1292930579}
   - {fileID: 363728276}
-  nextWave:
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 0400000001000000
   enemySection: EnemySquareTopLeft
   unlock: {fileID: 299998963}
   ParentObject: {fileID: 764185173}
@@ -17502,15 +17500,11 @@ MonoBehaviour:
   - {fileID: 687320820}
   - {fileID: 1787619110}
   - {fileID: 1415334901}
-  nextWave:
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 0600000002000000
   enemySection: EnemyUpperLeftTriangleUpperHalf
   unlock: {fileID: 1378785852}
   ParentObject: {fileID: 1008424131}
@@ -17638,15 +17632,11 @@ MonoBehaviour:
   - {fileID: 440145030}
   - {fileID: 631378857}
   - {fileID: 112963351}
-  nextWave:
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 0600000002000000
   enemySection: EnemyUpperRightTriangleUpperHalf
   unlock: {fileID: 1378785853}
   ParentObject: {fileID: 1020122303}
@@ -20085,12 +20075,11 @@ MonoBehaviour:
   - {fileID: 1111149232}
   - {fileID: 1606175842}
   - {fileID: 370489509}
-  nextWave:
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 0400000001000000
   enemySection: EnemySquareTopRight
   unlock: {fileID: 299998963}
   ParentObject: {fileID: 1112491439}
@@ -21064,13 +21053,10 @@ MonoBehaviour:
   - {fileID: 103272979}
   - {fileID: 1096720921}
   - {fileID: 876862748}
-  nextWave:
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 06000000
   enemySection: EnemyLowerRightTriangle
   unlock: {fileID: 1096471140}
   ParentObject: {fileID: 1256582151}
@@ -21989,15 +21975,10 @@ MonoBehaviour:
   - {fileID: 219505993}
   - {fileID: 1042342444}
   - {fileID: 1757349845}
-  nextWave:
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  enemyQuantity: 08000000
   enemySection: EnemyLowerLeftTriangle
   unlock: {fileID: 1096471139}
   ParentObject: {fileID: 1407620897}
@@ -31767,15 +31748,11 @@ MonoBehaviour:
   - {fileID: 1616588304}
   - {fileID: 1212192875}
   - {fileID: 417274192}
-  nextWave:
+  nextWave: []
+  enemyTypes:
+  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  enemyQuantity: 0600000002000000
   enemySection: EnemyUpperLeftTriangleLowerHalf
   unlock: {fileID: 1378785850}
   ParentObject: {fileID: 1708552165}
@@ -31964,12 +31941,11 @@ MonoBehaviour:
   - {fileID: 962651966}
   - {fileID: 236885099}
   - {fileID: 1960363248}
-  nextWave:
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 0400000001000000
   enemySection: EnemySquareLeft
   unlock: {fileID: 299998961}
   ParentObject: {fileID: 1717532101}
@@ -40088,15 +40064,11 @@ MonoBehaviour:
   - {fileID: 274665411}
   - {fileID: 1714578896}
   - {fileID: 606933029}
-  nextWave:
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 0600000002000000
   enemySection: EnemyUpperRightTriangleLowerHalf
   unlock: {fileID: 1378785851}
   ParentObject: {fileID: 2018956694}
@@ -40816,14 +40788,11 @@ MonoBehaviour:
   - {fileID: 2100374093}
   - {fileID: 900156276}
   - {fileID: 1007960842}
-  nextWave:
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
-  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  nextWave: []
+  enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
-  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  enemyQuantity: 0400000003000000
   enemySection: EnemySquareBottom
   unlock: {fileID: 299998960}
   ParentObject: {fileID: 2121415624}

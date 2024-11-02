@@ -75,14 +75,14 @@ public class PortalLocks : MonoBehaviour
         {
 
             if(spawn != null)
-            {
-
-                padlock = new GameObject[spawn.nextWave.Length];
+            { 
 
                 if (spawn.hey)
                 {
 
-                    for (int i = 0; i < spawn.nextWave.Length; i++)
+                    padlock = new GameObject[spawn.count];
+
+                    for (int i = 0; i < spawn.count; i++)
                     {
 
                         padlock[i] = spawn.nextWave[i];
