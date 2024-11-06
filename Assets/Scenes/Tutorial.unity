@@ -2189,10 +2189,10 @@ MonoBehaviour:
   - {fileID: 1806427998}
   key:
   - {fileID: 2121415624}
-  goAhead: 0
   allow: {fileID: 1912333330}
-  look: 0
   spawn: {fileID: 0}
+  goAhead: 0
+  look: 0
 --- !u!114 &299998961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2209,10 +2209,10 @@ MonoBehaviour:
   - {fileID: 319087375}
   key:
   - {fileID: 1717532101}
-  goAhead: 0
   allow: {fileID: 1912333330}
-  look: 0
   spawn: {fileID: 0}
+  goAhead: 0
+  look: 0
 --- !u!114 &299998962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2229,10 +2229,10 @@ MonoBehaviour:
   - {fileID: 1461146577}
   key:
   - {fileID: 716296377}
-  goAhead: 0
   allow: {fileID: 1912333330}
-  look: 0
   spawn: {fileID: 0}
+  goAhead: 0
+  look: 0
 --- !u!114 &299998963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2252,10 +2252,10 @@ MonoBehaviour:
   key:
   - {fileID: 764185173}
   - {fileID: 1112491439}
-  goAhead: 0
   allow: {fileID: 1912333330}
-  look: 0
   spawn: {fileID: 0}
+  goAhead: 0
+  look: 0
 --- !u!1 &306739951
 GameObject:
   m_ObjectHideFlags: 0
@@ -12961,6 +12961,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &490261034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 490261037}
+  - component: {fileID: 490261036}
+  - component: {fileID: 490261035}
+  - component: {fileID: 490261038}
+  m_Layer: 0
+  m_Name: CinemachineCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &490261035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490261034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraDistance: 10
+  DeadZoneDepth: 0
+  Composition:
+    ScreenPosition: {x: 0, y: 0}
+    DeadZone:
+      Enabled: 0
+      Size: {x: 0.2, y: 0.2}
+    HardLimits:
+      Enabled: 0
+      Size: {x: 0.8, y: 0.8}
+      Offset: {x: 0, y: 0}
+  CenterOnActivate: 1
+  TargetOffset: {x: 0, y: 0, z: 0}
+  Damping: {x: 1, y: 1, z: 1}
+  Lookahead:
+    Enabled: 0
+    Time: 0
+    Smoothing: 0
+    IgnoreY: 0
+--- !u!114 &490261036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490261034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 20241001
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 1625135722}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 60
+    OrthographicSize: 6.6825075
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
+--- !u!4 &490261037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490261034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.452, y: -1.042, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &490261038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490261034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoundingShape2D: {fileID: 1418301999}
+  Damping: 0.5
+  SlowingDistance: 5
+  OversizeWindow:
+    Enabled: 0
+    MaxWindowSize: 0
+    Padding: 0
+  m_LegacyMaxWindowSize: -2
 --- !u!1 &495822879
 GameObject:
   m_ObjectHideFlags: 0
@@ -14989,6 +15117,7 @@ MonoBehaviour:
   - {fileID: 902841149}
   - {fileID: 564880114}
   - {fileID: 474604101}
+  ParentObject: {fileID: 716296377}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -14996,8 +15125,8 @@ MonoBehaviour:
   enemyQuantity: 0400000001000000
   enemySection: EnemySquareRight
   unlock: {fileID: 299998962}
-  ParentObject: {fileID: 716296377}
   hey: 0
+  count: 0
 --- !u!1 &721951795
 GameObject:
   m_ObjectHideFlags: 0
@@ -15301,6 +15430,7 @@ MonoBehaviour:
   - {fileID: 1298800163}
   - {fileID: 1292930579}
   - {fileID: 363728276}
+  ParentObject: {fileID: 764185173}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -15308,8 +15438,8 @@ MonoBehaviour:
   enemyQuantity: 0400000001000000
   enemySection: EnemySquareTopLeft
   unlock: {fileID: 299998963}
-  ParentObject: {fileID: 764185173}
   hey: 0
+  count: 0
 --- !u!1 &777317849
 GameObject:
   m_ObjectHideFlags: 0
@@ -17500,6 +17630,7 @@ MonoBehaviour:
   - {fileID: 687320820}
   - {fileID: 1787619110}
   - {fileID: 1415334901}
+  ParentObject: {fileID: 1008424131}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -17507,8 +17638,8 @@ MonoBehaviour:
   enemyQuantity: 0600000002000000
   enemySection: EnemyUpperLeftTriangleUpperHalf
   unlock: {fileID: 1378785852}
-  ParentObject: {fileID: 1008424131}
   hey: 0
+  count: 0
 --- !u!1 &1010183828
 GameObject:
   m_ObjectHideFlags: 0
@@ -17632,6 +17763,7 @@ MonoBehaviour:
   - {fileID: 440145030}
   - {fileID: 631378857}
   - {fileID: 112963351}
+  ParentObject: {fileID: 1020122303}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -17639,8 +17771,8 @@ MonoBehaviour:
   enemyQuantity: 0600000002000000
   enemySection: EnemyUpperRightTriangleUpperHalf
   unlock: {fileID: 1378785853}
-  ParentObject: {fileID: 1020122303}
   hey: 0
+  count: 0
 --- !u!1 &1022388793
 GameObject:
   m_ObjectHideFlags: 0
@@ -19638,10 +19770,10 @@ MonoBehaviour:
   key:
   - {fileID: 1407620897}
   - {fileID: 174286475}
-  goAhead: 0
   allow: {fileID: 299998960}
-  look: 0
   spawn: {fileID: 2121415626}
+  goAhead: 0
+  look: 0
 --- !u!114 &1096471140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19658,10 +19790,10 @@ MonoBehaviour:
   key:
   - {fileID: 1256582151}
   - {fileID: 164831546}
-  goAhead: 0
   allow: {fileID: 1096471139}
-  look: 0
   spawn: {fileID: 1407620899}
+  goAhead: 0
+  look: 0
 --- !u!114 &1096471141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19678,10 +19810,10 @@ MonoBehaviour:
   key:
   - {fileID: 218057290}
   - {fileID: 397384298}
-  goAhead: 0
   allow: {fileID: 1096471140}
-  look: 0
   spawn: {fileID: 1256582153}
+  goAhead: 0
+  look: 0
 --- !u!1 &1096720921
 GameObject:
   m_ObjectHideFlags: 0
@@ -20075,6 +20207,7 @@ MonoBehaviour:
   - {fileID: 1111149232}
   - {fileID: 1606175842}
   - {fileID: 370489509}
+  ParentObject: {fileID: 1112491439}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -20082,8 +20215,8 @@ MonoBehaviour:
   enemyQuantity: 0400000001000000
   enemySection: EnemySquareTopRight
   unlock: {fileID: 299998963}
-  ParentObject: {fileID: 1112491439}
   hey: 0
+  count: 0
 --- !u!1 &1119969538
 GameObject:
   m_ObjectHideFlags: 0
@@ -21053,14 +21186,15 @@ MonoBehaviour:
   - {fileID: 103272979}
   - {fileID: 1096720921}
   - {fileID: 876862748}
+  ParentObject: {fileID: 1256582151}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
   enemyQuantity: 06000000
   enemySection: EnemyLowerRightTriangle
   unlock: {fileID: 1096471140}
-  ParentObject: {fileID: 1256582151}
   hey: 0
+  count: 0
 --- !u!1 &1274012419
 GameObject:
   m_ObjectHideFlags: 0
@@ -21858,10 +21992,10 @@ MonoBehaviour:
   key:
   - {fileID: 1708552165}
   - {fileID: 1802810726}
-  goAhead: 0
   allow: {fileID: 299998961}
-  look: 0
   spawn: {fileID: 1717532103}
+  goAhead: 0
+  look: 0
 --- !u!114 &1378785851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21878,10 +22012,10 @@ MonoBehaviour:
   key:
   - {fileID: 2018956694}
   - {fileID: 999853541}
-  goAhead: 0
   allow: {fileID: 299998962}
-  look: 0
   spawn: {fileID: 716296379}
+  goAhead: 0
+  look: 0
 --- !u!114 &1378785852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21898,10 +22032,10 @@ MonoBehaviour:
   key:
   - {fileID: 1008424131}
   - {fileID: 845713769}
-  goAhead: 0
   allow: {fileID: 299998963}
-  look: 0
   spawn: {fileID: 764185175}
+  goAhead: 0
+  look: 0
 --- !u!114 &1378785853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21918,10 +22052,10 @@ MonoBehaviour:
   key:
   - {fileID: 1020122303}
   - {fileID: 550464995}
-  goAhead: 0
   allow: {fileID: 299998963}
-  look: 0
   spawn: {fileID: 1112491441}
+  goAhead: 0
+  look: 0
 --- !u!1 &1407620897
 GameObject:
   m_ObjectHideFlags: 0
@@ -21975,14 +22109,15 @@ MonoBehaviour:
   - {fileID: 219505993}
   - {fileID: 1042342444}
   - {fileID: 1757349845}
+  ParentObject: {fileID: 1407620897}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
   enemyQuantity: 08000000
   enemySection: EnemyLowerLeftTriangle
   unlock: {fileID: 1096471139}
-  ParentObject: {fileID: 1407620897}
   hey: 0
+  count: 0
 --- !u!1 &1415334901
 GameObject:
   m_ObjectHideFlags: 0
@@ -22013,6 +22148,101 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1202066376}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1418301998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1418302000}
+  - component: {fileID: 1418301999}
+  m_Layer: 0
+  m_Name: CameraBound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &1418301999
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418301998}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 42.034508, y: -1.5533419}
+      - {x: 55.10101, y: -65.51856}
+      - {x: 278.44623, y: -65.03521}
+      - {x: 255.87833, y: 22.993347}
+      - {x: 166.38364, y: 44.366737}
+      - {x: 76.63569, y: 23.544973}
+      - {x: 56.686127, y: -64.8948}
+      - {x: 42.33609, y: -2.0505867}
+      - {x: 42.456722, y: 16.124031}
+      - {x: 42.44964, y: 16.271475}
+      - {x: 22.183838, y: 16.315136}
+      - {x: 22.542263, y: 13.42919}
+      - {x: -6.9510565, y: 12.309017}
+      - {x: -6.5877852, y: -9.809017}
+      - {x: 18.587786, y: -9.809017}
+      - {x: 21.951057, y: -1.6909828}
+  m_UseDelaunayMesh: 0
+--- !u!4 &1418302000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418301998}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.292872, y: 1.6259196, z: -0.11885933}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418959284
 GameObject:
@@ -22975,6 +23205,7 @@ GameObject:
   - component: {fileID: 1519999624}
   - component: {fileID: 1519999625}
   - component: {fileID: 1519999626}
+  - component: {fileID: 1519999627}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -23025,7 +23256,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.6825075
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -23050,7 +23281,7 @@ Transform:
   m_GameObject: {fileID: 1519999619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.34, y: -1.02, z: -10}
+  m_LocalPosition: {x: -7.452, y: -1.042, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23146,6 +23377,38 @@ MonoBehaviour:
   SceneName: TitleScreen
   pause: {fileID: 1721676850}
   script: {fileID: 1721676851}
+--- !u!114 &1519999627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519999619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowDebugText: 0
+  ShowCameraFrustum: 1
+  IgnoreTimeScale: 0
+  WorldUpOverride: {fileID: 0}
+  ChannelMask: -1
+  UpdateMethod: 2
+  BlendUpdateMethod: 1
+  LensModeOverride:
+    Enabled: 0
+    DefaultMode: 2
+  DefaultBlend:
+    Style: 1
+    Time: 2
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  CustomBlends: {fileID: 0}
 --- !u!4 &1530283455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2458639361781371384, guid: 640238adecc7ec04f9fc440026a8779f, type: 3}
@@ -23742,6 +24005,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 236576977067172729, guid: 11c9f99558c1f284c93d06aa05b5eceb, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 236576977067172729, guid: 11c9f99558c1f284c93d06aa05b5eceb, type: 3}
+      propertyPath: 'm_Animations.Array.data[2]'
+      value: 
+      objectReference: {fileID: 7400000, guid: 98cf988947c4c61438aa8a84ddcd663b, type: 2}
     - target: {fileID: 1759600756318800659, guid: 11c9f99558c1f284c93d06aa05b5eceb, type: 3}
       propertyPath: m_Name
       value: Player
@@ -31748,6 +32019,7 @@ MonoBehaviour:
   - {fileID: 1616588304}
   - {fileID: 1212192875}
   - {fileID: 417274192}
+  ParentObject: {fileID: 1708552165}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -31755,8 +32027,8 @@ MonoBehaviour:
   enemyQuantity: 0600000002000000
   enemySection: EnemyUpperLeftTriangleLowerHalf
   unlock: {fileID: 1378785850}
-  ParentObject: {fileID: 1708552165}
   hey: 0
+  count: 0
 --- !u!1 &1713561486
 GameObject:
   m_ObjectHideFlags: 0
@@ -31941,6 +32213,7 @@ MonoBehaviour:
   - {fileID: 962651966}
   - {fileID: 236885099}
   - {fileID: 1960363248}
+  ParentObject: {fileID: 1717532101}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -31948,8 +32221,8 @@ MonoBehaviour:
   enemyQuantity: 0400000001000000
   enemySection: EnemySquareLeft
   unlock: {fileID: 299998961}
-  ParentObject: {fileID: 1717532101}
   hey: 0
+  count: 0
 --- !u!1 &1721676850 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4878256149501630976, guid: 03956cbbccfdb6242b248289aa2a6108, type: 3}
@@ -33375,10 +33648,10 @@ MonoBehaviour:
   key:
   - {fileID: 66687934}
   - {fileID: 2136607808}
-  goAhead: 0
   allow: {fileID: 1912333330}
-  look: 0
   spawn: {fileID: 0}
+  goAhead: 0
+  look: 0
 --- !u!1 &1928051075
 GameObject:
   m_ObjectHideFlags: 0
@@ -40064,6 +40337,7 @@ MonoBehaviour:
   - {fileID: 274665411}
   - {fileID: 1714578896}
   - {fileID: 606933029}
+  ParentObject: {fileID: 2018956694}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -40071,8 +40345,8 @@ MonoBehaviour:
   enemyQuantity: 0600000002000000
   enemySection: EnemyUpperRightTriangleLowerHalf
   unlock: {fileID: 1378785851}
-  ParentObject: {fileID: 2018956694}
   hey: 0
+  count: 0
 --- !u!1 &2041561611
 GameObject:
   m_ObjectHideFlags: 0
@@ -40788,6 +41062,7 @@ MonoBehaviour:
   - {fileID: 2100374093}
   - {fileID: 900156276}
   - {fileID: 1007960842}
+  ParentObject: {fileID: 2121415624}
   nextWave: []
   enemyTypes:
   - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
@@ -40795,8 +41070,8 @@ MonoBehaviour:
   enemyQuantity: 0400000003000000
   enemySection: EnemySquareBottom
   unlock: {fileID: 299998960}
-  ParentObject: {fileID: 2121415624}
   hey: 0
+  count: 0
 --- !u!114 &2132028387 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8344345765341979278, guid: 03956cbbccfdb6242b248289aa2a6108, type: 3}
@@ -41028,6 +41303,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1519999622}
+  - {fileID: 490261037}
   - {fileID: 2009958844}
   - {fileID: 1050631235}
   - {fileID: 1586966318}
@@ -41039,3 +41315,4 @@ SceneRoots:
   - {fileID: 1742947393}
   - {fileID: 406282676}
   - {fileID: 1651178740}
+  - {fileID: 1418302000}
