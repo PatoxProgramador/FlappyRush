@@ -90,10 +90,18 @@ public class Aiming : MonoBehaviour
 
         if (collision.tag == "EnemyBullet")
         {
+
             if (life != null)
             {
                 enemy = GameObject.FindGameObjectWithTag("EnemyBullet").GetComponent<EnemyBullet>();
-                life.TakeDamage(enemy.damage);
+
+                if (enemy != null)
+                {
+
+                    life.TakeDamage(enemy.damage);
+
+                }
+                
             }
         }
     }
