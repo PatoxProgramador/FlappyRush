@@ -23570,6 +23570,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FishChef
       objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: ca485220ff06b77498872561c949848d, type: 3}
+      propertyPath: patrolTag.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848032708006531744, guid: ca485220ff06b77498872561c949848d, type: 3}
+      propertyPath: 'patrolTag.Array.data[0]'
+      value: StartMoveSpot
+      objectReference: {fileID: 0}
     - target: {fileID: 8640426162993770822, guid: ca485220ff06b77498872561c949848d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
