@@ -9,10 +9,6 @@ public class MeleePlacer : MonoBehaviour
     public Transform bulletPos;
     private float timer;
     [SerializeField] EnemyMovementFixed allowance;
-    
-    [Header("BulletDamages")]
-    public int damage;
-
 
     void Start()
     {

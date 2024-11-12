@@ -19,6 +19,7 @@ public class Aiming : MonoBehaviour
     public PlayerHealth life;
 
     private EnemyBullet enemy;
+    private FishBullet alternativeEnemy;
     private bool canAim = true; // New variable to control aiming
 
     void Start()
@@ -93,7 +94,9 @@ public class Aiming : MonoBehaviour
 
             if (life != null)
             {
+
                 enemy = GameObject.FindGameObjectWithTag("EnemyBullet").GetComponent<EnemyBullet>();
+                alternativeEnemy = GameObject.FindGameObjectWithTag("EnemyBullet").GetComponent<FishBullet>();
 
                 if (enemy != null)
                 {
@@ -101,9 +104,16 @@ public class Aiming : MonoBehaviour
                     life.TakeDamage(enemy.damage);
 
                 }
-                
+                else if (alternativeEnemy != null)
+                {
+
+                    life.TakeDamage(alternativeEnemy.damage);
+
+                }
+
             }
         }
+       
     }
 
     private void OnTriggerExit2D(Collider2D collision)
