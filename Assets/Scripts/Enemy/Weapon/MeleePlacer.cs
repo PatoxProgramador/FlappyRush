@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeleePlacer : MonoBehaviour
 {
-
+    public GameObject rotationmelee;
     public GameObject bullet;
     public Transform bulletPos;
     private float timer;
@@ -12,7 +12,7 @@ public class MeleePlacer : MonoBehaviour
 
     void Start()
     {
-
+        rotationmelee = GameObject.Find("Rotating");
         allowance = GetComponent<EnemyMovementFixed>();
 
     }
@@ -36,7 +36,7 @@ public class MeleePlacer : MonoBehaviour
 
     void shoot ()
     {
-    GameObject meleeAttack = Instantiate(bullet, bulletPos.position, Quaternion.identity);
+    GameObject meleeAttack = Instantiate(bullet, bulletPos.position, rotationmelee.transform.rotation * Quaternion.Euler(0, 0, 80));
 
     meleeAttack.transform.parent = transform;
 
