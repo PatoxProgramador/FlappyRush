@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Aiming : MonoBehaviour
 {
-    private Camera mainCam;
+    public static Camera mainCam;
     private Vector3 mousePos;
     private GameObject CrossHair;
     private Firing firing;

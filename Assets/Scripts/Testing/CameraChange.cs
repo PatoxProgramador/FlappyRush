@@ -6,7 +6,6 @@ public class CameraChange : MonoBehaviour
 {
 
     public GameObject[] cameras;
-    //[SerializeField]Transform []camTransform;
 
     string inputKey;
 
@@ -15,16 +14,12 @@ public class CameraChange : MonoBehaviour
     void Start()
     {
 
-        //camTransform = new Transform[cameras.Length];
-
         for (int i = 0; i< cameras.Length; i++)
         {
 
             cameras[i].SetActive(false);
 
             follow[i].enabled = false;
-
-            //camTransform[i] = cameras[i].transform;
 
         }
 
@@ -67,7 +62,7 @@ public class CameraChange : MonoBehaviour
 
         cameras[a].SetActive(true);
 
-        //cameras[a].transform.position = camTransform[a].position;
+        Aiming.mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
         follow[a].enabled = true;
 
