@@ -2,25 +2,10 @@ using UnityEngine;
 
 public class RotateAroundObject : MonoBehaviour
 {
-    public GameObject targetObject;
-    public float rotationSpeed = 20f;
-
-    void Start()
-    {
-        targetObject = GameObject.Find("Rotating");
-    }
+    [SerializeField] private float rotationSpeed = 5f;
+    [SerializeField] private Transform rotateAround;
     void Update()
     {
-        if (targetObject != null)
-        {
-            // Rotate around the target object's position
-            transform.RotateAround(targetObject.transform.position, Vector3.up, rotationSpeed * Time.deltaTime);
-            
-            // You can replace Vector3.up with any axis you need, like Vector3.forward or Vector3.right.
-        }
-        else
-        {
-            Debug.LogWarning("Target object not assigned!");
-        }
+        this.transform.RotateAround(rotateAround.position, Vector3.forward, rotationSpeed * Time.deltaTime);
     }
 }

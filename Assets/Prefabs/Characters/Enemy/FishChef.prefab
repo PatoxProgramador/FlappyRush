@@ -375,7 +375,7 @@ MonoBehaviour:
   arraySize: 0
   patrolTag: []
   isShooting: 0
-  shootingDistance: 2
+  shootingDistance: 3
   startFollowDistance: 10
 --- !u!195 &9081753304929426151
 NavMeshAgent:
@@ -411,10 +411,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331f2c06d98498f4e800a0e294940871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationmelee: {fileID: 0}
   bullet: {fileID: 274916002492899262, guid: d340a557e41632b459792a09c38c34b8, type: 3}
   bulletPos: {fileID: 5093420602644323761}
   allowance: {fileID: 0}
-  damage: 10
 --- !u!1 &5945384152977109473
 GameObject:
   m_ObjectHideFlags: 0
