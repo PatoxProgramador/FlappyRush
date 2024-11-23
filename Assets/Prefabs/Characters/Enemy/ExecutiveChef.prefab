@@ -169,6 +169,37 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &5521497021617141051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753605470831011612}
+  m_Layer: 0
+  m_Name: spawnPoint
+  m_TagString: spawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &753605470831011612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5521497021617141051}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 383187667839383063}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5690863863575491725
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +237,7 @@ Transform:
   m_Children:
   - {fileID: 7593313428198057832}
   - {fileID: 6244118488358249653}
+  - {fileID: 753605470831011612}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5264936805442955218
@@ -383,6 +415,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23adf0e34905a944bb058361340ba32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  week:
+  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  - {fileID: 5690863863575491725, guid: 9ec87355ba03ce64983d459da40fe88b, type: 3}
+  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  medium:
+  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  - {fileID: 5690863863575491725, guid: 5605824d641e230478d6df51bfecd7dd, type: 3}
+  hard: {fileID: 5690863863575491725, guid: ca485220ff06b77498872561c949848d, type: 3}
+  spawnPoint: {fileID: 5521497021617141051}
   health: 15
   maxHealth: 15
   healthBar: {fileID: 0}
