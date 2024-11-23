@@ -29,49 +29,58 @@ public class ExecutiveChefHealth : MonoBehaviour
     void Update()
     {
 
-        if (health == 0f)
+        Ability();
+        
+    }
+
+    void Ability()
+    {
+
+        if (health <= 0f)
         {
 
             var randomChance = Random.Range(0, 100);
             if (randomChance == 0)
+            {
+                foreach (GameObject obj in week)
+                {
+                    Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                }
+
+                foreach (GameObject obj in medium)
+                {
+                    Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                }
+
+                Instantiate(hard, spawnPoint.transform.position, spawnPoint.transform.rotation);
+            }
+            else
+            {
+                var randomChef = Random.Range(0, 3);
+
+                if (randomChef == 0)
                 {
                     foreach (GameObject obj in week)
-                        {
-                            Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
-                        }
-
-                    foreach (GameObject obj in medium)
-                        {
-                            Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
-                        }
-
-                            Instantiate(hard, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                    {
+                        Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                    }
                 }
-            else
-            {    var randomChef = Random.Range(0,3);
-            
-                if (randomChef == 0)
-                    {
-                        foreach (GameObject obj in week)
-                        {
-                            Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
-                        }
-                    }
                 if (randomChef == 1)
+                {
+                    foreach (GameObject obj in medium)
                     {
-                        foreach (GameObject obj in medium)
-                        {
-                            Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
-                        }
+                        Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
                     }
+                }
                 if (randomChef == 2)
-                    {
-                        Instantiate (hard, spawnPoint.transform.position, spawnPoint.transform.rotation); 
-                    }
+                {
+                    Instantiate(hard, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                }
             }
-            
+
             Destroy(gameObject);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
