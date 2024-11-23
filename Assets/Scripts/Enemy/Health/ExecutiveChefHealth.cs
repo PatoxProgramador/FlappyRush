@@ -32,7 +32,6 @@ public class ExecutiveChefHealth : MonoBehaviour
         if (health == 0f)
         {
 
-            Destroy(gameObject);
             var randomChance = Random.Range(0, 100);
             if (randomChance == 0)
                 {
@@ -70,6 +69,8 @@ public class ExecutiveChefHealth : MonoBehaviour
                         Instantiate (hard, spawnPoint.transform.position, spawnPoint.transform.rotation); 
                     }
             }
+            
+            Destroy(gameObject);
         }
     }
 
