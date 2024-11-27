@@ -523,6 +523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccaf20e78902cb14e95a342162c6e798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunY: 0
+  gunX: 0
   aimSpeed: 10
   life: {fileID: 0}
 --- !u!212 &8742723570355215622

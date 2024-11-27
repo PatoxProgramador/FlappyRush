@@ -1,19 +1,49 @@
 fileFormatVersion: 2
-guid: 4309b69bcb8c4054fa2cd32ce886e282
+guid: 1b1ce85291e106b4d9f69b51ca21513e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4952222697897269849
-    second: Touchin_The_Sky_0
+      213: -1709290144177278771
+    second: rollRED-Sheet_0
   - first:
-      213: 891034014292583522
-    second: Touchin_The_Sky_1
+      213: 8655979020041921749
+    second: rollRED-Sheet_1
   - first:
-      213: 5070990309706517637
-    second: Touchin_The_Sky_2
+      213: 9084245462418190084
+    second: rollRED-Sheet_2
   - first:
-      213: -8757620825543316271
-    second: Touchin_The_Sky_3
+      213: -4845974871113184877
+    second: rollRED-Sheet_3
+  - first:
+      213: -7331939445553009208
+    second: rollRED-Sheet_4
+  - first:
+      213: -3208352413794351967
+    second: rollRED-Sheet_5
+  - first:
+      213: 7238331513418555224
+    second: rollRED-Sheet_6
+  - first:
+      213: -2625704477325047312
+    second: rollRED-Sheet_7
+  - first:
+      213: -1213785678784073334
+    second: rollRED-Sheet_8
+  - first:
+      213: -7629177533472206195
+    second: rollRED-Sheet_9
+  - first:
+      213: 5790411365201222786
+    second: rollRED-Sheet_10
+  - first:
+      213: 8952507131601983443
+    second: rollRED-Sheet_11
+  - first:
+      213: 6217526735240982110
+    second: rollRED-Sheet_12
+  - first:
+      213: 2279539878345674702
+    second: rollRED-Sheet_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 240
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -200,89 +230,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Touchin_The_Sky_0
+      name: rollRED-Sheet_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 127
-        width: 90
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95a1bc44e44d9b440800000000000000
-      internalID: 4952222697897269849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Touchin_The_Sky_1
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 127
-        width: 98
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26423b017b69d5c00800000000000000
-      internalID: 891034014292583522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Touchin_The_Sky_2
-      rect:
-        serializedVersion: 2
-        x: 15
+        x: 0
         y: 0
-        width: 106
-        height: 97
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 58c4185c1d6cf5640800000000000000
-      internalID: 5070990309706517637
+      spriteID: dde15c13da5900e4895f5a14d11a8bdc
+      internalID: -313114639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Touchin_The_Sky_3
+      name: rollRED-Sheet_1
       rect:
         serializedVersion: 2
-        x: 143
+        x: 810
         y: 0
-        width: 98
-        height: 97
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1dc6def424ea67680800000000000000
-      internalID: -8757620825543316271
+      spriteID: e3f529709e4b36642bca92081792e7b4
+      internalID: -873518324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollRED-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 810
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1bcf80d24290f4c84cc86662b12050
+      internalID: 210182075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollRED-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 0
+        width: 810
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad86845c442f5fe4a81d63c8253a2fd5
+      internalID: -1806428266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollRED-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 810
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1c53d133adac44fba55ae1f1c912c3
+      internalID: 202861088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollRED-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 0
+        width: 810
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f7e793ac786e04a9db020fb6aa1e32
+      internalID: 1664456933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollRED-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 0
+        width: 810
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdc291841c407d4699c1dd8db5218ea
+      internalID: 40291666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollRED-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 0
+        width: 810
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6326a3fa6a4932749b75dd8bbb3e32b4
+      internalID: -524107082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollRED-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 6480
+        y: 0
+        width: 810
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4eab1fe47586745aaaea4897db44cf
+      internalID: 885710919
       vertices: []
       indices: 
       edges: []
@@ -291,7 +431,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7108816ea9b36714297bf9a5bf719a58
     internalID: 0
     vertices: []
     indices: 
@@ -301,10 +441,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Touchin_The_Sky_0: 4952222697897269849
-      Touchin_The_Sky_1: 891034014292583522
-      Touchin_The_Sky_2: 5070990309706517637
-      Touchin_The_Sky_3: -8757620825543316271
+      rollRED-Sheet_0: -313114639
+      rollRED-Sheet_1: -873518324
+      rollRED-Sheet_2: 210182075
+      rollRED-Sheet_3: -1806428266
+      rollRED-Sheet_4: 202861088
+      rollRED-Sheet_5: 1664456933
+      rollRED-Sheet_6: 40291666
+      rollRED-Sheet_7: -524107082
+      rollRED-Sheet_8: 885710919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
