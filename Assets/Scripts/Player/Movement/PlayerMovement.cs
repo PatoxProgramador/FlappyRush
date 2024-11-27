@@ -7,8 +7,10 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField] public float velocity = 5f;// jumping up force/speed
+    [SerializeField] private float velocity;// jumping up force/speed
+     public float setVelocity;// jumping up force/speed
     [SerializeField] public float speed = 1f;// movement speed
+    [SerializeField] public float multiplier = 1f;
 
     public Sprite[] faces;
 
@@ -25,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         EnablePlayerMovement();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        velocity = setVelocity;
 
     }
 
@@ -90,11 +94,15 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator changeJumpBoost()
     {
 
-        velocity = 3;
+        velocity = (setVelocity - 2) * multiplier;
 
         yield return new WaitForSeconds(0.05f);
 
-        velocity = 5;
+        velocity = setVelocity * multiplier;
+
+        yield return new WaitForSeconds(0.3f);
+
+        body.linearVelocity = Vector2.up * 0;
 
     }
 

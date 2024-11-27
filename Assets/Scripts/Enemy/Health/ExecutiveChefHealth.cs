@@ -16,6 +16,7 @@ public class ExecutiveChefHealth : MonoBehaviour
 
     void Start()
     {
+
         spawnPoint = GameObject.FindGameObjectWithTag("spawnPoint");
         //sets health to max
         health = maxHealth;

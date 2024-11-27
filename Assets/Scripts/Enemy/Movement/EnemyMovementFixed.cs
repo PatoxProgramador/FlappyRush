@@ -42,9 +42,13 @@ public class EnemyMovementFixed : MonoBehaviour
 
         AutomaticSpawnerName();
         //debug purpose
-        arraySize = 0;
-        TagControl();
+        if (arraySize <= 0)
+        {
 
+            TagControl();
+
+        }
+        
         //get location
         randomSpot = Random.Range(0,arraySize);
 
@@ -121,126 +125,133 @@ public class EnemyMovementFixed : MonoBehaviour
     void TagControl()
     {
 
+        arraySize = 0;
+
         for (int i = 0; i < patrolTag.Length; i++)
-        {
-
-            GameObject[] movingSpots = GameObject.FindGameObjectsWithTag(patrolTag[i]);
-
-            for (int j = 0; j < movingSpots.Length; j++)
             {
 
-                moveSpots.Add(movingSpots[j]);
+                GameObject[] movingSpots = GameObject.FindGameObjectsWithTag(patrolTag[i]);
 
-                arraySize++;
+                for (int j = 0; j < movingSpots.Length; j++)
+                {
+
+                    moveSpots.Add(movingSpots[j]);
+
+                    arraySize++;
+
+                }
 
             }
-
-        }
 
     }
     //If enemy spawned with certain tag its assineg certain move spots with those tags
     void AutomaticSpawnerName()
     {
 
-        switch (gameObject.tag)
+        if (gameObject.tag != "enemy")
         {
 
-            case "EnemySquareLeft":
+            switch (gameObject.tag)
+            {
 
-                patrolTag = new string[2];
+                case "EnemySquareLeft":
 
-                patrolTag[0] = "LeftSquareMoveSpot";
-                patrolTag[1] = "CenterLeftSquareMoveSpot";
+                    patrolTag = new string[2];
 
-            break;
+                    patrolTag[0] = "LeftSquareMoveSpot";
+                    patrolTag[1] = "CenterLeftSquareMoveSpot";
 
-            case "EnemySquareRight":
+                    break;
 
-                patrolTag = new string[2];
+                case "EnemySquareRight":
 
-                patrolTag[0] = "RightSquareMoveSpot";
-                patrolTag[1] = "CenterRightSquareMoveSpot";
+                    patrolTag = new string[2];
 
-            break;
+                    patrolTag[0] = "RightSquareMoveSpot";
+                    patrolTag[1] = "CenterRightSquareMoveSpot";
 
-            case "EnemySquareBottom":
+                    break;
 
-                patrolTag = new string[2];
+                case "EnemySquareBottom":
 
-                patrolTag[0] = "BottomSquareMoveSpot";
-                patrolTag[1] = "CenterBottomSquareMoveSpot";
+                    patrolTag = new string[2];
 
-            break;
+                    patrolTag[0] = "BottomSquareMoveSpot";
+                    patrolTag[1] = "CenterBottomSquareMoveSpot";
 
-            case "EnemySquareTopLeft":
+                    break;
 
-                patrolTag = new string[2];
+                case "EnemySquareTopLeft":
 
-                patrolTag[0] = "TopLeftSquareMoveSpot";
-                patrolTag[1] = "CenterLeftSquareMoveSpot";
+                    patrolTag = new string[2];
 
-            break;
+                    patrolTag[0] = "TopLeftSquareMoveSpot";
+                    patrolTag[1] = "CenterLeftSquareMoveSpot";
 
-            case "EnemySquareTopRight":
+                    break;
 
-                patrolTag = new string[2];
+                case "EnemySquareTopRight":
 
-                patrolTag[0] = "TopRightSquareMoveSpot";
-                patrolTag[1] = "CenterRightSquareMoveSpot";
+                    patrolTag = new string[2];
 
-            break;
+                    patrolTag[0] = "TopRightSquareMoveSpot";
+                    patrolTag[1] = "CenterRightSquareMoveSpot";
 
-            case "EnemyLowerLeftTriangle":
+                    break;
 
-                patrolTag = new string[1];
+                case "EnemyLowerLeftTriangle":
 
-                patrolTag[0] = "LowerLeftTriangleMoveSpot";
+                    patrolTag = new string[1];
 
-            break;
+                    patrolTag[0] = "LowerLeftTriangleMoveSpot";
 
-            case "EnemyLowerRightTriangle":
+                    break;
 
-                patrolTag = new string[1];
+                case "EnemyLowerRightTriangle":
 
-                patrolTag[0] = "LowerRightTriangleMoveSpot";
+                    patrolTag = new string[1];
 
-            break;
+                    patrolTag[0] = "LowerRightTriangleMoveSpot";
 
-            case "EnemyUpperLeftTriangleLowerHalf":
+                    break;
 
-                patrolTag = new string[1];
+                case "EnemyUpperLeftTriangleLowerHalf":
 
-                patrolTag[0] = "UpperLeftTriangleLowerHalf";
+                    patrolTag = new string[1];
 
-            break;
+                    patrolTag[0] = "UpperLeftTriangleLowerHalf";
 
-            case "EnemyUpperRightTriangleLowerHalf":
+                    break;
 
-                patrolTag = new string[1];
+                case "EnemyUpperRightTriangleLowerHalf":
 
-                patrolTag[0] = "UpperRightTriangleLowerHalf";
+                    patrolTag = new string[1];
 
-            break;
+                    patrolTag[0] = "UpperRightTriangleLowerHalf";
 
-            case "EnemyUpperLeftTriangleUpperHalf":
+                    break;
 
-                patrolTag = new string[1];
+                case "EnemyUpperLeftTriangleUpperHalf":
 
-                patrolTag[0] = "UpperLeftTriangleUpperHalf";
+                    patrolTag = new string[1];
 
-            break;
+                    patrolTag[0] = "UpperLeftTriangleUpperHalf";
 
-            case "EnemyUpperRightTriangleUpperHalf":
+                    break;
 
-                patrolTag = new string[1];
+                case "EnemyUpperRightTriangleUpperHalf":
 
-                patrolTag[0] = "UpperRightTriangleUpperHalf";
+                    patrolTag = new string[1];
 
-            break;
+                    patrolTag[0] = "UpperRightTriangleUpperHalf";
+
+                    break;
+
+            }
+            // tag changes to enemy
+            gameObject.tag = "enemy";
 
         }
-        // tag changes to enemy
-        gameObject.tag = "enemy";
 
     }
 

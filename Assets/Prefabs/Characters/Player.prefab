@@ -297,7 +297,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 3
+  setVelocity: 0
   speed: 3
+  multiplier: 1
   faces:
   - {fileID: 21300000, guid: be0670cd967afea419e79fadb75f6e5a, type: 3}
   - {fileID: 21300000, guid: 17f27c7c7ac1b594aaa92f935094752a, type: 3}
@@ -526,7 +528,7 @@ MonoBehaviour:
   gunY: 0
   gunX: 0
   aimSpeed: 10
-  life: {fileID: 0}
+  life: {fileID: 7327986955497871724}
 --- !u!212 &8742723570355215622
 SpriteRenderer:
   m_ObjectHideFlags: 0
