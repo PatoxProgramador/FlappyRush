@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: fdc42eadebde4a649b33cbd40d29cd61
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 4dad5f70ea71fa14c89309972ebf3635
+    path: Assets/Scenes/FirstRoom.unity
+    guid: a5ab3a2b278ee9141a664cdfaf815238
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

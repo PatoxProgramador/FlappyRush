@@ -60,12 +60,6 @@ public class SceneChange : MonoBehaviour
  
         pause.SetActive(true);
 
-        /*
-        script.enabled = true;
-        wait = true;
-        Pause.isPaused = true;
-        */
-
         script.Paused();
 
     }
