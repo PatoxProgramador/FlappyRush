@@ -33,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth > 0)
         {
 
-            currentHealth -= amount;
+            currentHealth -= amount; //The amount multiplied by the health multiplier will allow us to control the armor
 
         }
 
