@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 159e4719d18fcc740bf1ab94a330b485
+guid: a7e9f3188b1c4af4c98ebe28aa955a12
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1123513817559975274
-    second: REEDducky_idle-Sheet_0
+      213: -2142861571469514943
+    second: idleREDSheet_0
   - first:
-      213: 3127685151750816578
-    second: REEDducky_idle-Sheet_1
+      213: -827863037669304352
+    second: idleREDSheet_1
   - first:
-      213: -8203566051227237253
-    second: REEDducky_idle-Sheet_2
+      213: 1916518528211232618
+    second: idleREDSheet_2
   - first:
-      213: -6647397725642581167
-    second: REEDducky_idle-Sheet_3
+      213: -5620580584666762516
+    second: idleREDSheet_3
   - first:
-      213: -7459460573667003072
-    second: REEDducky_idle-Sheet_4
+      213: -5783124017339118980
+    second: idleREDSheet_4
   - first:
-      213: -6783364508955846094
-    second: REEDducky_idle-Sheet_5
+      213: -4679407293055206340
+    second: idleREDSheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 240
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -206,133 +206,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: REEDducky_idle-Sheet_0
+      name: idleREDSheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 360
-        height: 360
+        x: 213
+        y: 31
+        width: 311
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 786b9d6916be54e409d385b1c7101f54
-      internalID: -1868290426
+      spriteID: 14769bd01c60342e0800000000000000
+      internalID: -2142861571469514943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REEDducky_idle-Sheet_1
+      name: idleREDSheet_1
       rect:
         serializedVersion: 2
-        x: 360
-        y: 0
-        width: 360
-        height: 360
+        x: 970
+        y: 31
+        width: 311
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b536778a4ee93594eafa20975d4583c3
-      internalID: 1200733192
+      spriteID: 0e79b0514f6d284f0800000000000000
+      internalID: -827863037669304352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REEDducky_idle-Sheet_2
+      name: idleREDSheet_2
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
-        width: 360
-        height: 360
+        x: 1727
+        y: 31
+        width: 311
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 960d7dfe520591742bc6ae710eab246c
-      internalID: -2089068166
+      spriteID: a672c7f7277d89a10800000000000000
+      internalID: 1916518528211232618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REEDducky_idle-Sheet_3
+      name: idleREDSheet_3
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 0
-        width: 360
-        height: 360
+        x: 2484
+        y: 31
+        width: 311
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7a14adae1480de04a844a7a421bf28b1
-      internalID: -756610934
+      spriteID: ce2fa73ccbfaff1b0800000000000000
+      internalID: -5620580584666762516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REEDducky_idle-Sheet_4
+      name: idleREDSheet_4
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 0
-        width: 360
-        height: 360
+        x: 3241
+        y: 31
+        width: 311
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8b43bc93a0330f941b145de16362dcc1
-      internalID: -1112474007
+      spriteID: c7ac876b8573ebfa0800000000000000
+      internalID: -5783124017339118980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: REEDducky_idle-Sheet_5
+      name: idleREDSheet_5
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 0
-        width: 360
-        height: 360
+        x: 3998
+        y: 31
+        width: 311
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 82bd582964dd0554fae906e5daecde0e
-      internalID: -1492846936
+      spriteID: c3c721a0cd76f0fb0800000000000000
+      internalID: -4679407293055206340
       vertices: []
       indices: 
       edges: []
@@ -341,7 +341,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: aeb7cd2fff57e6a418434d2ba80d5e46
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -350,13 +350,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      REEDducky_idle-Sheet_0: -1868290426
-      REEDducky_idle-Sheet_1: 1200733192
-      REEDducky_idle-Sheet_2: -2089068166
-      REEDducky_idle-Sheet_3: -756610934
-      REEDducky_idle-Sheet_4: -1112474007
-      REEDducky_idle-Sheet_5: -1492846936
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

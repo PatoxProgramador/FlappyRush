@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 240
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -209,20 +209,20 @@ TextureImporter:
       name: WalkRED-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 810
-        height: 630
+        x: 197
+        y: 35
+        width: 308
+        height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f894cea6e75496f4fbabed66c6d82dc9
-      internalID: 586362370
+      spriteID: 6ca667770b0416f70800000000000000
+      internalID: 9178688642220452550
       vertices: []
       indices: 
       edges: []
@@ -231,20 +231,20 @@ TextureImporter:
       name: WalkRED-Sheet_1
       rect:
         serializedVersion: 2
-        x: 810
-        y: 0
-        width: 810
-        height: 630
+        x: 1007
+        y: 35
+        width: 326
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0cac336d67d441646a7a65b9eaac5c5c
-      internalID: 1798997014
+      spriteID: 702ba2e67ebb38270800000000000000
+      internalID: 8251645544933011975
       vertices: []
       indices: 
       edges: []
@@ -253,20 +253,20 @@ TextureImporter:
       name: WalkRED-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 0
-        width: 810
-        height: 630
+        x: 1817
+        y: 35
+        width: 344
+        height: 470
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f6930bfe9a43f244a9ee8f653942d174
-      internalID: -541305813
+      spriteID: 4c7f932974f95b360800000000000000
+      internalID: 7184823910284261316
       vertices: []
       indices: 
       edges: []
@@ -275,20 +275,20 @@ TextureImporter:
       name: WalkRED-Sheet_3
       rect:
         serializedVersion: 2
-        x: 2430
-        y: 0
-        width: 810
-        height: 630
+        x: 2627
+        y: 35
+        width: 344
+        height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4c686631809e6ab468b5de4385690ce6
-      internalID: -2039146086
+      spriteID: 5943e60bfb779b4f0800000000000000
+      internalID: -812486592581192555
       vertices: []
       indices: 
       edges: []
@@ -297,20 +297,20 @@ TextureImporter:
       name: WalkRED-Sheet_4
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 0
-        width: 810
-        height: 630
+        x: 3437
+        y: 35
+        width: 326
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 44abc41609cf0994e8cc9c0b1770c7b4
-      internalID: -1716191453
+      spriteID: 09c6960d273949e10800000000000000
+      internalID: 2203548239023139984
       vertices: []
       indices: 
       edges: []
@@ -319,20 +319,20 @@ TextureImporter:
       name: WalkRED-Sheet_5
       rect:
         serializedVersion: 2
-        x: 4050
-        y: 0
-        width: 810
-        height: 630
+        x: 4247
+        y: 35
+        width: 326
+        height: 470
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2acea7ce25101a34788d98b985731490
-      internalID: 1754196827
+      spriteID: 7439898f305a16070800000000000000
+      internalID: 8097935041463096135
       vertices: []
       indices: 
       edges: []
@@ -341,7 +341,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a7c5730c7b0b2054fb5d41b1c08fddac
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -350,13 +350,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      WalkRED-Sheet_0: 586362370
-      WalkRED-Sheet_1: 1798997014
-      WalkRED-Sheet_2: -541305813
-      WalkRED-Sheet_3: -2039146086
-      WalkRED-Sheet_4: -1716191453
-      WalkRED-Sheet_5: 1754196827
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
