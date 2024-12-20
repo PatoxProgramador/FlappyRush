@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -350,7 +350,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WalkRED-Sheet_0: 9178688642220452550
+      WalkRED-Sheet_1: 8251645544933011975
+      WalkRED-Sheet_2: 7184823910284261316
+      WalkRED-Sheet_3: -812486592581192555
+      WalkRED-Sheet_4: 2203548239023139984
+      WalkRED-Sheet_5: 8097935041463096135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
