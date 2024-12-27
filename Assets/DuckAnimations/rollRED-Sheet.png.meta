@@ -233,10 +233,10 @@ TextureImporter:
       name: rollRED-Sheet_0
       rect:
         serializedVersion: 2
-        x: 197
-        y: 53
-        width: 344
-        height: 416
+        x: 0
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +255,10 @@ TextureImporter:
       name: rollRED-Sheet_1
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 53
-        width: 362
-        height: 380
+        x: 810
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,10 +277,10 @@ TextureImporter:
       name: rollRED-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1943
-        y: 377
-        width: 182
-        height: 92
+        x: 1620
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: rollRED-Sheet_3
       rect:
         serializedVersion: 2
-        x: 2807
-        y: 377
-        width: 110
-        height: 164
+        x: 2430
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,10 +321,10 @@ TextureImporter:
       name: rollRED-Sheet_4
       rect:
         serializedVersion: 2
-        x: 3581
-        y: 359
-        width: 146
-        height: 146
+        x: 3240
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,10 +343,10 @@ TextureImporter:
       name: rollRED-Sheet_5
       rect:
         serializedVersion: 2
-        x: 4409
-        y: 377
-        width: 164
-        height: 128
+        x: 4050
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: rollRED-Sheet_6
       rect:
         serializedVersion: 2
-        x: 5219
-        y: 359
-        width: 164
-        height: 74
+        x: 4860
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,10 +387,10 @@ TextureImporter:
       name: rollRED-Sheet_7
       rect:
         serializedVersion: 2
-        x: 5867
-        y: 53
-        width: 362
-        height: 380
+        x: 5670
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -409,10 +409,10 @@ TextureImporter:
       name: rollRED-Sheet_8
       rect:
         serializedVersion: 2
-        x: 6677
-        y: 53
-        width: 344
-        height: 416
+        x: 6480
+        y: 0
+        width: 810
+        height: 630
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,121 +427,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: rollRED-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 1889
-        y: 53
-        width: 290
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d829ff45477bf1690800000000000000
-      internalID: -7629177533472206195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rollRED-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 2681
-        y: 17
-        width: 308
-        height: 290
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28c143e257cab5050800000000000000
-      internalID: 5790411365201222786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rollRED-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 3509
-        y: 17
-        width: 308
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d79944cdc1bd3c70800000000000000
-      internalID: 8952507131601983443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rollRED-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 4319
-        y: 17
-        width: 308
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5e6883bf97194650800000000000000
-      internalID: 6217526735240982110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rollRED-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 5129
-        y: 53
-        width: 272
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ecf812c117d82af10800000000000000
-      internalID: 2279539878345674702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b4312dc2f63ab64e9a45bc051e72900
     internalID: 0
     vertices: []
     indices: 
@@ -553,10 +443,6 @@ TextureImporter:
     nameFileIdTable:
       rollRED-Sheet_0: -1709290144177278771
       rollRED-Sheet_1: 8655979020041921749
-      rollRED-Sheet_10: 5790411365201222786
-      rollRED-Sheet_11: 8952507131601983443
-      rollRED-Sheet_12: 6217526735240982110
-      rollRED-Sheet_13: 2279539878345674702
       rollRED-Sheet_2: 9084245462418190084
       rollRED-Sheet_3: -4845974871113184877
       rollRED-Sheet_4: -7331939445553009208
@@ -564,7 +450,6 @@ TextureImporter:
       rollRED-Sheet_6: 7238331513418555224
       rollRED-Sheet_7: -2625704477325047312
       rollRED-Sheet_8: -1213785678784073334
-      rollRED-Sheet_9: -7629177533472206195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
