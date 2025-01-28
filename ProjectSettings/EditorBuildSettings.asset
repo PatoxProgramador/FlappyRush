@@ -11,5 +11,41 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstRoom.unity
     guid: a5ab3a2b278ee9141a664cdfaf815238
+  - enabled: 1
+    path: Assets/Scenes/SecondRoom.unity
+    guid: 1101aa232a40ac14596b635f5daa6742
+  - enabled: 1
+    path: Assets/Scenes/ThirdRoom.unity
+    guid: cd81a1d1addbf9e4f8debcc4af43b7a9
+  - enabled: 1
+    path: Assets/Scenes/FourthRoom.unity
+    guid: a3f086a7f388e6945b5c8bc9acb83b4c
+  - enabled: 1
+    path: Assets/Scenes/FifthRoom.unity
+    guid: 5e4bec82ff5bf814fa4563b3f950ead3
+  - enabled: 1
+    path: Assets/Scenes/SixthRoom.unity
+    guid: 63c7aa2d462e4e74f8cfa0612aeb5962
+  - enabled: 1
+    path: Assets/Scenes/SeventhRoom.unity
+    guid: fdb21af7d21a9b34ca1d1b5cdb0bd207
+  - enabled: 1
+    path: Assets/Scenes/EigthRoom.unity
+    guid: 1d117410ea89aed47890f365347599b8
+  - enabled: 1
+    path: Assets/Scenes/NinthRoom.unity
+    guid: 38f2d32880b2b8e4d8f73a02a8e02ed8
+  - enabled: 1
+    path: Assets/Scenes/TenthRoom.unity
+    guid: f26a3574e3ff46e40af1ddb6dd3e418f
+  - enabled: 1
+    path: Assets/Scenes/EleventhRoom.unity
+    guid: 2b3abe73f6f20f64f8e6690e8a434433
+  - enabled: 1
+    path: Assets/Scenes/TwelvthRoom.unity
+    guid: 0946714b6002121468c88fdcdadf7efc
+  - enabled: 1
+    path: Assets/Scenes/ThirteenthRoom.unity
+    guid: 5153f9aacf8d38145ab0e90ff484c909
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
