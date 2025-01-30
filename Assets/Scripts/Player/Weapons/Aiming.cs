@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Unity.Cinemachine;
 
 public class Aiming : MonoBehaviour
 {
@@ -30,6 +32,39 @@ public class Aiming : MonoBehaviour
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         this.FindBulletSpawnPoint();
+
+        //counter scene is here
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+        CinemachineCamera a = FindAnyObjectByType<CinemachineCamera>();
+        GameObject b = GameObject.FindGameObjectWithTag("Player");
+        a.Target.TrackingTarget = b.transform;
+
+    }
+
+    //Scene keeps track of the scene its on, to player can know where to spawn in each scene
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        //player destroys itself
+        if (scene.name == "TitleScreen")
+        {
+
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+
+        }
+        else
+        {
+        
+            mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
+            this.FindBulletSpawnPoint();
+
+            CinemachineCamera a = FindAnyObjectByType<CinemachineCamera>();
+            GameObject b = GameObject.FindGameObjectWithTag("Player");
+            a.Target.TrackingTarget = b.transform;
+
+        }
+
     }
 
     private void OnEnable() 

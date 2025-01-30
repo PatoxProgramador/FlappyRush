@@ -42,6 +42,7 @@ TagManager:
   - enemy1
   - spawnPoint
   - GameManager
+  - PlayerSpawnPoint
   layers:
   - Default
   - TransparentFX

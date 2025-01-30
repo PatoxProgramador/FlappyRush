@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -24,11 +25,40 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+
         body = GetComponent<Rigidbody2D>();
         EnablePlayerMovement();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         velocity = setVelocity;
+        //makes player spawn in every scene without needing to copy prefabs
+        DontDestroyOnLoad(this.gameObject);
+        //counter scene is here
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+    }
+    //Scene keeps track of the scene its on, to player can know where to spawn in each scene
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        //player destroys itself
+        if (scene.name == "TitleScreen")
+        {
+
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+            GameObject.Destroy(this.gameObject);
+
+        }
+        else
+        {
+            //finding spawn
+            GameObject initialPositionGameObject = GameObject.FindGameObjectWithTag("PlayerSpawnPoint");
+            //setting spawn location
+            Transform initialPositionTransform = initialPositionGameObject.transform;
+            //setting player position
+            Vector3 playerInitialPosition = initialPositionTransform.position;
+            this.transform.position = playerInitialPosition;
+
+        }
 
     }
 

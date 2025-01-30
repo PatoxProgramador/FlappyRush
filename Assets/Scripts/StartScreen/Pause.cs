@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
 
-    public GameObject canvas;
+    [SerializeField]GameObject canvas;
     public GameObject backButton;
 
     public string sceneName;
@@ -18,6 +18,7 @@ public class Pause : MonoBehaviour
     void Start()
     {
 
+        canvas = GameObject.FindGameObjectWithTag("Player");
         UnPaused();
 
     }
