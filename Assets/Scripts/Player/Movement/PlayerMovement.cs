@@ -31,10 +31,12 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         velocity = setVelocity;
+        
         //makes player spawn in every scene without needing to copy prefabs
         DontDestroyOnLoad(this.gameObject);
         //counter scene is here
         SceneManager.sceneLoaded += OnSceneLoaded;
+        
 
     }
     //Scene keeps track of the scene its on, to player can know where to spawn in each scene
@@ -50,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+
             //finding spawn
             GameObject initialPositionGameObject = GameObject.FindGameObjectWithTag("PlayerSpawnPoint");
             //setting spawn location
@@ -61,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+    
 
     private void OnEnable() {
         PlayerHealth.onPlayerDeath += DisablePlayerMovement;
