@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,18 +8,20 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour
 {
 
-    public string SceneName;
+    [SerializeField] string SceneName;
 
     public GameObject pause;
-    public Pause script;
+
+    public Pause scripty;
 
     public static bool wait;
-    
+
     void Start()
     {
+
         //pause script and prefab in titlescreen
         wait = false;
-        script.enabled = false;
+        scripty.enabled = false;
         pause.SetActive(false);
 
     }
@@ -29,7 +32,7 @@ public class SceneChange : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
 
-            script.Paused();
+            scripty.Paused();
 
         }
 
@@ -60,7 +63,7 @@ public class SceneChange : MonoBehaviour
  
         pause.SetActive(true);
 
-        script.Paused();
+        scripty.Paused();
 
     }
 

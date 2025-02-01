@@ -1,27 +1,31 @@
+using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 
-    void Awake()
+    void Start()
     {
 
-        GameObject[] immortalManager = GameObject.FindGameObjectsWithTag("GameManager");
+        DontDestroyOnLoad(this.gameObject);
+        //counter scene is here
+        SceneManager.sceneLoaded += OnSceneLoaded;
 
-        if (immortalManager.Length > 1)
+    }
+        //Scene keeps track of the scene its on, to player can know where to spawn in each scene
+        private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
         {
 
-            Destroy(this.gameObject);
+            //player destroys itself
+            if (scene.name == "TitleScreen")
+            {
+
+                SceneManager.sceneLoaded -= OnSceneLoaded;
+                GameObject.Destroy(this.gameObject);
+
+            }
 
         }
 
-        DontDestroyOnLoad(this.gameObject);
-
-    }
-
-    void Update()
-    {
-        
-    }
-
-}
+   }

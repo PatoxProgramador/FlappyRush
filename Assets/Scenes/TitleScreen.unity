@@ -937,66 +937,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377588413}
   m_CullTransparentMesh: 1
---- !u!1 &1644835284 stripped
+--- !u!1 &1474577441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4878256149501630976, guid: 03956cbbccfdb6242b248289aa2a6108, type: 3}
   m_PrefabInstance: {fileID: 2083679157959618546}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1644835289 stripped
+--- !u!114 &1474577442 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6215427176864151056, guid: 03956cbbccfdb6242b248289aa2a6108, type: 3}
   m_PrefabInstance: {fileID: 2083679157959618546}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644835284}
+  m_GameObject: {fileID: 1474577441}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b34424f88a102dd449013f08a40fffd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1666767230
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1666767232}
-  - component: {fileID: 1666767231}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: GameManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1666767231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666767230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7cb31b2db651a4db34e821b36435d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1666767232
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666767230}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.464788, y: -114.71517, z: -11.042725}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1873212168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,8 +1284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: FirstRoom
-  pause: {fileID: 1644835284}
-  script: {fileID: 1644835289}
+  pause: {fileID: 1474577441}
+  scripty: {fileID: 1474577442}
 --- !u!1 &2113383956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,4 +1544,3 @@ SceneRoots:
   - {fileID: 2024146674}
   - {fileID: 845066888}
   - {fileID: 2083679157959618546}
-  - {fileID: 1666767232}

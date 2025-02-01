@@ -17,8 +17,7 @@ public class Pause : MonoBehaviour
 
     void Start()
     {
-
-        canvas = GameObject.FindGameObjectWithTag("Player");
+        
         UnPaused();
 
     }
