@@ -12,6 +12,7 @@ public class Aiming : MonoBehaviour
     private Vector3 mousePos;
     private GameObject CrossHair;
     private Firing firing;
+    GameObject parent;
 
     [Header("Gun position")]
     public float gunY;
@@ -21,11 +22,6 @@ public class Aiming : MonoBehaviour
     [SerializeField]
     private float aimSpeed = 10f;
 
-    [Header("Health and Damage")]
-    public PlayerHealth life;
-
-    private EnemyBullet enemy;
-    private FishBullet alternativeEnemy;
     private bool canAim = true; // New variable to control aiming
 
     void Start()
@@ -35,10 +31,11 @@ public class Aiming : MonoBehaviour
 
         //counter scene is here
         SceneManager.sceneLoaded += OnSceneLoaded;
-
+        
         CinemachineCamera a = FindAnyObjectByType<CinemachineCamera>();
-        GameObject b = GameObject.FindGameObjectWithTag("Player");
-        a.Target.TrackingTarget = b.transform;
+        //parent = GameObject.FindGameObjectWithTag("Player");
+        parent = transform.parent.gameObject;
+        a.Target.TrackingTarget = parent.transform;
 
     }
 
@@ -58,10 +55,10 @@ public class Aiming : MonoBehaviour
             mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
             this.FindBulletSpawnPoint();
-
+            
             CinemachineCamera a = FindAnyObjectByType<CinemachineCamera>();
-            GameObject b = GameObject.FindGameObjectWithTag("Player");
-            a.Target.TrackingTarget = b.transform;
+            a.Target.TrackingTarget = parent.transform;
+           
 
         }
 
@@ -121,51 +118,10 @@ public class Aiming : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Zoom")
-        {
-            CameraZoom.isZoom = true;
-        }
-
-        if (collision.tag == "EnemyBullet")
-        {
-
-            if (life != null)
-            {
-
-                enemy = GameObject.FindGameObjectWithTag("EnemyBullet").GetComponent<EnemyBullet>();
-                alternativeEnemy = GameObject.FindGameObjectWithTag("EnemyBullet").GetComponent<FishBullet>();
-
-                if (enemy != null)
-                {
-
-                    life.TakeDamage(enemy.damage);
-
-                }
-                else if (alternativeEnemy != null)
-                {
-
-                    life.TakeDamage(alternativeEnemy.damage);
-
-                }
-
-            }
-        }
-       
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Zoom")
-        {
-            CameraZoom.isZoom = false;
-        }
-    }
-
     // Method to disable aiming
     private void DisableAiming()
     {
         canAim = false; // Set aiming to false when the player dies
     }
+
 }

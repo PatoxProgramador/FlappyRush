@@ -23,6 +23,12 @@ public class PlayerMovement : MonoBehaviour
     private float jumpTimeCounter;
     public float jumpTime;
 
+    [Header("Health and Damage")]
+    public PlayerHealth life;
+
+    private EnemyBullet enemy;
+    private FishBullet alternativeEnemy;
+
     void Start()
     {
 
@@ -35,8 +41,7 @@ public class PlayerMovement : MonoBehaviour
         //makes player spawn in every scene without needing to copy prefabs
         DontDestroyOnLoad(this.gameObject);
         //counter scene is here
-        SceneManager.sceneLoaded += OnSceneLoaded;
-        
+        SceneManager.sceneLoaded += OnSceneLoaded;  
 
     }
     //Scene keeps track of the scene its on, to player can know where to spawn in each scene
@@ -152,4 +157,50 @@ public class PlayerMovement : MonoBehaviour
         //animator.enable = true;
         body.bodyType = RigidbodyType2D.Dynamic;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.tag == "Zoom")
+        {
+            CameraZoom.isZoom = true;
+        }
+
+        if (collision.tag == "EnemyBullet")
+        {
+
+            if (life != null)
+            {
+
+                enemy = GameObject.FindGameObjectWithTag("EnemyBullet").GetComponent<EnemyBullet>();
+                alternativeEnemy = GameObject.FindGameObjectWithTag("EnemyBullet").GetComponent<FishBullet>();
+
+                if (enemy != null)
+                {
+
+                    life.TakeDamage(enemy.damage);
+
+                }
+                else if (alternativeEnemy != null)
+                {
+
+                    life.TakeDamage(alternativeEnemy.damage);
+
+                }
+
+            }
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+
+        if (collision.tag == "Zoom")
+        {
+            CameraZoom.isZoom = false;
+        }
+
+    }
+
 }
