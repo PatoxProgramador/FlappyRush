@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -21,8 +22,12 @@ public class UIManager : MonoBehaviour
     }
      public void RestartLevel()
      {
+
+        GameManager.revived = true;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-     }
+
+    }
 
      public void BackToMainMenu()
      {

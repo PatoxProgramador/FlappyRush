@@ -66,12 +66,12 @@ public class Aiming : MonoBehaviour
 
     private void OnEnable() 
     {
-        PlayerHealth.onPlayerDeath += DisableAiming; // Subscribe to death event
+        PlayerHealth.onPlayerDeath -= DisableAiming; // Subscribe to death event
     }
 
     private void OnDisable() 
     {
-        PlayerHealth.onPlayerDeath -= DisableAiming; // Unsubscribe from death event
+        PlayerHealth.onPlayerDeath += DisableAiming; // Unsubscribe from death event
     }
 
     void FixedUpdate()

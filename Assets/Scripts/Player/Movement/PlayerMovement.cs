@@ -32,6 +32,23 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
 
+        GameObject[] manager = GameObject.FindGameObjectsWithTag("Player");
+
+        if (manager.Length > 1)
+        {
+
+            Destroy(this.gameObject);
+
+        }
+        if (GameManager.revived)
+        {
+
+            PlayerHealth.currentHealth = life.maxHealth;
+
+            GameManager.revived = false;
+
+        }
+
         body = GetComponent<Rigidbody2D>();
         EnablePlayerMovement();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -66,17 +83,26 @@ public class PlayerMovement : MonoBehaviour
             Vector3 playerInitialPosition = initialPositionTransform.position;
             this.transform.position = playerInitialPosition;
 
+            if (GameManager.revived)
+            {
+
+                PlayerHealth.currentHealth = life.maxHealth;
+
+                GameManager.revived = false;
+
+            }
+
         }
 
     }
     
 
     private void OnEnable() {
-        PlayerHealth.onPlayerDeath += DisablePlayerMovement;
+        PlayerHealth.onPlayerDeath -= DisablePlayerMovement;
     }
 
     private void OnDisable() {
-        PlayerHealth.onPlayerDeath -= DisablePlayerMovement;
+        PlayerHealth.onPlayerDeath += DisablePlayerMovement;
     }
 
     void Update()

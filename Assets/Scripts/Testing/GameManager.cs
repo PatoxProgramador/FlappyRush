@@ -5,8 +5,19 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
+    public static bool revived = false;
+
     void Start()
     {
+
+        GameObject[] manager = GameObject.FindGameObjectsWithTag("GameManager");
+
+        if (manager.Length >1)
+        {
+
+            Destroy(this.gameObject);
+
+        }
 
         DontDestroyOnLoad(this.gameObject);
         //counter scene is here

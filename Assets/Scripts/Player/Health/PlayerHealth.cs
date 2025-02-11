@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public static event Action onPlayerDeath;
     public float maxHealth;
-    public float currentHealth;
+    public static float currentHealth;
 
     public static float radiusHealth;
 
@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
         {
             onPlayerDeath?.Invoke();
         }
-
+     
     }
 
 }
