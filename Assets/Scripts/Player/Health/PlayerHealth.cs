@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public static event Action onPlayerDeath;
     public float maxHealth;
     public static float currentHealth;
+    [SerializeField]private float health;
 
     public static float radiusHealth;
 
@@ -22,6 +23,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
+
+        health = currentHealth;
 
         radiusHealth = (currentHealth / maxHealth) * -90;
         

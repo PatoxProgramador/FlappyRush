@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontal;
 
-    private Rigidbody2D body;
+    [SerializeField]private Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
 
     private float jumpTimeCounter;
@@ -182,6 +182,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //animator.enable = true;
         body.bodyType = RigidbodyType2D.Dynamic;
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

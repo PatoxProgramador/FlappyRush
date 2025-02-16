@@ -10,15 +10,19 @@ public class UIManager : MonoBehaviour
 
     private void OnEnable() {
         PlayerHealth.onPlayerDeath += EnableGameOverMenu;
+       
     }
 
     private void OnDisable() {
         PlayerHealth.onPlayerDeath -= EnableGameOverMenu;
+        Time.timeScale = 1f;
     }
 
     public void EnableGameOverMenu()
     {
         gameOverMenu.SetActive(true);
+        Time.timeScale = 0.0f;
+
     }
      public void RestartLevel()
      {
